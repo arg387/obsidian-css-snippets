@@ -199,7 +199,7 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11681
   padding: 0 3px 0 3px;
 }
  */
-/* Excalidraw css styles */
+/* Excalidraw css styles for big icons*/
 
 .excalidraw {
     --default-button-size: 4rem !important;
@@ -246,4 +246,5 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11681
 /* Font change of file and folder names in files section for Dracula theme */
 /* .nav-files-container {
     font-family: 'Comic Sans MS';
+
 } */
