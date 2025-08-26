@@ -1,0 +1,1329 @@
+/*########## CUSTOM CALLOUTS SNIPPET ##########*/
+/*### COLORS & VARIABLES ###*/
+
+.theme-light,
+.theme-dark {
+	--new-blue: 80, 124, 165;
+	--new-cyan: 66, 162, 168;
+	--new-red: 211, 47, 47;
+	--new-purple: 112, 112, 202;
+	--new-magenta: 189, 94, 180;
+	--new-pink: 245, 116, 116;
+	--new-orange: 223, 119, 22;
+	--new-yellow: 211, 167, 12;
+	--new-mist: 173, 138, 16;
+	--new-green: 48, 193, 62;
+	--new-lemon: 135, 170, 79;
+	--new-apple: 79, 151, 115;
+	--new-grey: 135, 135, 135;
+	--new-tan: 113, 98, 61;
+	--newvar-pink:242, 31, 183;
+	--new-silver: 200, 200, 200;
+	--new-gold: 255, 215, 0;
+	--new-call1: 3, 252, 119;
+}
+
+
+body {
+	--new-callout-blue: var(--new-blue);
+	--new-callout-cyan: var(--new-cyan);
+	--new-callout-purple: var(--new-purple);
+	--new-callout-magenta: var(--new-magenta);
+	--new-callout-pink: var(--new-pink);
+	--new-callout-red: var(--new-red);
+	--new-callout-orange: var(--new-orange);
+	--new-callout-yellow: var(--new-yellow);
+	--new-callout-mist: var(--new-mist);
+	--new-callout-green: var(--new-green);
+	--new-callout-lemon: var(--new-lemon);
+	--new-callout-apple: var(--new-apple);
+	--new-callout-grey: var(--new-grey);
+	--new-callout-tan: var(--new-tan);
+	--new-callout-p: var(--newvar-pink);
+	--new-callout-silver: var(--new-silver);
+	--new-callout-gold: var(--new-gold);
+	--new-callout-c1: var(--new-call1);
+}
+
+
+/*########## GENERAL CALLOUT SETTINGS ##########*/
+
+/*### PADDING ###*/
+
+.callout-content > p,
+.callout-content > ul {
+	margin: var(--size-4-4) 0px var(--size-4-2) 0px;
+}
+
+/*### BORDER RADIUS (S, M, L, XL) ###*/
+
+.callout {
+	--callout-radius: var(--radius-l);
+
+}
+
+/*### BORDER RADIUS (S, M, L, XL) ###*/
+
+.callout-title-inner {
+	margin-right: auto;
+
+}
+
+
+/*####################### Custom Callouts Go Here #######################*/
+/* My new additions */
+:is([data-callout-metadata][data-callout-fold][data-callout="solution"].callout) {
+	--callout-color: var(--new-callout-green) !important;
+	--callout-icon: lucide-check !important;
+}
+:is([data-callout-metadata][data-callout-fold][data-callout="dashboard"].callout) {
+	--callout-color: 255, 204, 229 !important;
+	--callout-icon: lucide-gauge !important;
+}
+:is([data-callout-metadata][data-callout-fold].callout[data-callout="#"].callout){
+	--callout-color: var(--new-callout-red) !important; 
+	--callout-icon: lucide-hash !important;
+}
+:is([data-callout-metadata][data-callout-fold][data-callout="writing"].callout) {
+	--callout-color: var(--new-callout-p) !important;
+	--callout-icon: lucide-book-open-text !important;
+}
+:is([data-callout-metadata][data-callout-fold][data-callout="body"].callout) {
+	--callout-color: 51, 255, 255 !important;
+	--callout-icon: lucide-activity !important;
+}
+
+:is([data-callout-metadata][data-callout-fold][data-callout="mind"].callout) {
+	--callout-color: 255, 255, 51 !important;
+	--callout-icon: lucide-brain !important;
+}
+
+:is([data-callout-metadata][data-callout-fold][data-callout="soul"].callout) {
+	--callout-color: 178, 102, 255 !important;
+	--callout-icon: lucide-brain-circuit !important;
+}
+
+:is([data-callout-metadata][data-callout-fold][data-callout="money"].callout) {
+	--callout-color: var(--new-callout-green) !important;
+	--callout-icon: lucide-indian-rupee !important;
+}
+:is([data-callout-metadata][data-callout-fold][data-callout="dollars"].callout) {
+	--callout-color: var(--new-callout-gold) !important;
+	--callout-icon: lucide-dollar-sign !important;
+}
+:is([data-callout-metadata][data-callout-fold][data-callout="budget"].callout) {
+	--callout-color: var(--new-callout-gold) !important;
+	--callout-icon: lucide-notebook-text !important;
+}
+:is([data-callout-metadata][data-callout-fold][data-callout="question"].callout) {
+	--callout-color: var(--new-callout-c1) !important;
+	--callout-icon: lucide-message-circle-question !important;
+}
+/*
+  TIMELINE as Callout 
+*/
+.callout[data-callout-metadata*="timeline-dif"] {
+	order: 1;
+	display: grid;
+	grid-template-columns: 150px auto;
+	border: 0;
+	--dot-offset: calc(-2px + 16px);
+	--callout-icon-offset-right: -1040px;
+	--callout-icon-offset-bottom: -3%;
+
+	.callout-title-inner {
+			width: 100%;
+			text-align: right;
+			color: var(--viewer-text-normal);
+			font-size: var(--h2-size);
+			margin-top: var(--dot-offset);
+			margin-right: 50px;
+			max-width: 7ch;
+			word-wrap: break-word;
+	}
+	.callout-title {
+			background-color: var(--background-primary);
+			border: 0;
+			box-shadow: 0;
+			padding: 0;
+			margin: 0;
+			box-shadow: None;
+	}
+	.callout-icon {
+			order: 2;
+			margin-inline: 25px;
+			border-left: 4px solid var(--viewer-text-faint);
+			height: 100%;
+			position: absolute;
+			margin-left: 120px;
+
+			&::after {
+					box-sizing: border-box;
+					background-color: var(--viewer-text-muted);
+					position: absolute;
+					border: 6px solid var(--background-primary);
+					border-radius: 100%;
+					width: 32px;
+					top: var(--dot-offset);
+					left: -18px;
+			}
+	}
+	.svg-icon {
+			display: none;
+	}
+
+	.callout-content {
+			order: 3;
+			--p-spacing: 0.5rem;
+			background-color: hsl(from var(--callout-color) h calc(s / var(--viewer-callout-multiplier-s)) calc(l / (0.95 * var(--viewer-callout-multiplier-s))));
+			box-shadow: -2px 3px 1px var(--viewer-callout-box-shadow);
+			border-radius: 5px;
+			margin-bottom: 5px;
+			padding-top: 8px;
+			padding-bottom: 5px;
+			padding-left: 25px;
+	}
+}
+
+/* Directory styling */
+.callout[data-callout-metadata*="directory"] {
+	--indentation-guide-color: transparent;
+
+	.callout-content li {
+			--list-indent: 2em;
+			list-style-type: none;
+			font-family: var(--font-monospace);
+			position: relative;
+	}
+
+	.callout-content li::before,
+	.callout-content li::after {
+			content: "";
+			position: absolute;
+			left: -1em;
+			background: var(--viewer-text-muted);
+	}
+	.callout-content li::before {
+			top: 0.85em;
+			width: 10px;
+			height: 2px;
+			margin-left: -5px;
+	}
+	.callout-content li li::after {
+			top: 0;
+			bottom: 0;
+			width: 1.5px;
+			height: 100%;
+			margin-left: -5px;
+	}
+	.callout-content li:last-child::after {
+			height: 0.85em;
+	}
+
+	.callout-content li code {
+			background: none;
+			font-size: 1em;
+			font-family: var(--font-monospace);
+			font-style: italic;
+			font-weight: 100;
+			margin-left: auto;
+			position: absolute;
+			right: 0;
+			text-align: right;
+			color: var(--viewer-text-muted);
+	}
+
+	.callout-content li mark {
+			font-style: italic;
+	}
+}
+
+/* Icon styling */
+.callout[data-callout-metadata*="icon"] {
+	.svg-icon {
+			display: block;
+			--icon-size: 72px;
+			opacity: 0.5;
+			position: absolute;
+			bottom: var(--callout-icon-offset-bottom, -5%);
+			right: var(--callout-icon-offset-right, 0);
+	}
+}
+
+/* Outline styling */
+.callout[data-callout-metadata*="outline"] {
+	.callout-content {
+			background-color: var(--background-primary);
+			border: 1px solid var(--callout-color) !important;
+			box-shadow: None;
+	}
+}
+.callout[data-callout="timeline"] {
+    
+  --callout-color: var(--new-callout-purple);
+  --callout-icon: clock;
+
+  /* links */
+  
+  & a {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none; 
+    font-style: inherit;   
+    background: none;
+    padding-inline: 0;
+
+    /* hashtags */
+
+    &[href^="#"]{
+      text-decoration: none;
+      padding-inline: .4rem;
+    }
+
+    /* show links on hover */
+
+    &:hover {
+      text-decoration: underline solid;
+      color: inherit;
+    }
+  } 
+  
+  /* content */ 
+
+  & .callout-content {
+
+    background-color: none;
+    padding: 2rem 0;
+
+    /* H1 as horizontal line */
+
+    & h1 {
+      font-weight: var(--font-normal);
+      font-size: var(--font-text-size);
+      color: var(--text-normal) !important;
+      padding: 0 !important;
+      margin-right: 1rem !important;
+      text-align: right;
+      border-top: dotted .1rem;
+    }
+
+    /* H2 as box */
+      
+    & h2 {
+      font-weight: var(--font-normal) !important;
+      font-size: var(--font-text-size);
+      color: var(--text-muted);
+      text-align: left !important;
+      margin: 0 1rem;
+      padding: .2rem 1rem .2rem 1rem;
+      border: solid .1rem;
+      border-radius: .4rem;
+      display: inline-block;
+    }  
+
+   /* vertical line */
+
+    & :is(h1, h3, p, ul, ol) {
+      margin: 0 0 0 3.2rem;
+      border-left: solid .1rem;
+      padding: 0 1rem;
+      border-color: var(--text-muted);
+      font-weight: var(--font-normal);
+      color: var(--text-normal);
+      font-size: var(--font-text-size);
+
+      /* space before H1 */      
+      &:has(+ h1) {
+        padding-bottom: 1rem;
+      }        
+
+      /* space before H2 */
+      &:has(+ h2) {
+        padding-bottom: 1.5rem;
+      } 
+    }
+
+    /* H3 as bullet */
+       
+    & h3::before {
+        border: .4rem solid;
+        border-radius: .4rem;
+        border-color: var(--text-muted);
+        content: "";
+        display: block;
+        height: 0;
+        left: -1.45rem;
+        position: relative;
+        top: 1rem;
+        width: 0;
+        z-index: 1;
+    }    
+
+    & h3 {
+      color: var(--text-normal);
+    }
+
+    /* text */
+
+    & :is(p, ol, ul, li) {
+      color: var(--text-faint);
+    }
+
+    /* images */
+    
+    & img {
+      padding: 1rem;
+    }
+  }
+}
+
+.callout[data-callout="dictionary"] {
+    
+  --callout-color: 235, 116, 52;
+  --callout-icon: book-text;
+
+  /* links */
+  
+  & a {
+    color: inherit;
+    font-weight: inherit;
+    text-decoration: none; 
+    font-style: inherit;   
+    background: none;
+    padding-inline: 0;
+
+    /* hashtags */
+
+    &[href^="#"]{
+      text-decoration: none;
+      padding-inline: .4rem;
+    }
+
+    /* show links on hover */
+
+    &:hover {
+      text-decoration: underline solid;
+      color: inherit;
+    }
+  } 
+  
+  /* content */ 
+
+  & .callout-content {
+
+    background-color: none;
+    padding: 2rem 0;
+
+    /* H1 as horizontal line */
+
+    & h1 {
+      font-weight: var(--font-normal);
+      font-size: var(--font-text-size);
+      color: var(--text-normal) !important;
+      padding: 0 !important;
+      margin-right: 1rem !important;
+      text-align: right;
+      border-top: dotted .1rem;
+    }
+
+    /* H2 as box */
+      
+    & h2 {
+      font-weight: var(--font-normal) !important;
+      font-size: var(--font-text-size);
+      color: var(--text-muted);
+      text-align: left !important;
+      margin: 0 1rem;
+      padding: .2rem 1rem .2rem 1rem;
+      border: solid .1rem;
+      border-radius: .4rem;
+      display: inline-block;
+    }  
+
+   /* vertical line */
+
+    & :is(h1, h3, p, ul, ol) {
+      margin: 0 0 0 3.2rem;
+      border-left: solid .1rem;
+      padding: 0 1rem;
+      border-color: var(--text-muted);
+      font-weight: var(--font-normal);
+      color: var(--text-normal);
+      font-size: var(--font-text-size);
+
+      /* space before H1 */      
+      &:has(+ h1) {
+        padding-bottom: 1rem;
+      }        
+
+      /* space before H2 */
+      &:has(+ h2) {
+        padding-bottom: 1.5rem;
+      } 
+    }
+
+    /* H3 as bullet */
+       
+    & h3::before {
+        border: .4rem solid;
+        border-radius: .4rem;
+        border-color: var(--text-muted);
+        content: "";
+        display: block;
+        height: 0;
+        left: -1.45rem;
+        position: relative;
+        top: 1rem;
+        width: 0;
+        z-index: 1;
+    }    
+
+    & h3 {
+      color: var(--text-normal);
+    }
+
+    /* text */
+
+    & :is(p, ol, ul, li) {
+      color: var(--text-normal);
+    }
+
+    /* images */
+    
+    & img {
+      padding: 1rem;
+    }
+  }
+}
+/* for workout callout */
+
+.callout[data-callout="workout"]{
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: lucide-dumbbell;
+}
+/* For sleeping callout */
+.callout[data-callout="sleeping"]{
+	--callout-color: var(--new-callout-apple); 
+	--callout-icon: lucide-moon-star;
+}
+/* for photo gallery */
+.callout[data-callout="gallery"],
+.callout[data-callout="photos"] {
+	--callout-color: var(--new-callout-pink); 
+	--callout-icon: lucide-images;
+}
+/* ## For table of index */
+.callout[data-callout="index-table"] {
+	--callout-color: var(--new-callout-pink); 
+	--callout-icon: layout-grid;
+}
+.callout[data-callout="essentials"],
+.callout[data-callout="reminder"] {
+	--callout-color: var(--new-callout-red);
+	--callout-icon: lucide-shield-check;
+}
+.callout[data-callout="fixes"],
+.callout[data-callout="fix"] {
+	--callout-color: var(--new-callout-green);
+	--callout-icon: lucide-hammer;
+}
+.callout[data-callout="repeat"],
+.callout[data-callout="repeating"]{
+	--callout-color: var(--new-callout-pink);
+	--callout-icon: lucide-repeat;
+}
+/*### BOOKMARK, BOOKMARKS ###*/
+/* MY only edit in this class here is to add important callout  */
+.callout[data-callout="bookmark"],
+.callout[data-callout="bookmarks"],
+.callout[data-callout="important"]  {
+	--callout-color: var(--new-callout-orange); 
+	--callout-icon: bookmark;
+}
+
+/* My new additions */
+/*### TASK, CHECKMARK, CHECKBOX ###*/
+
+.callout[data-callout="task"],
+.callout[data-callout="checkmark"],
+.callout[data-callout="checkcircle"],
+.callout[data-callout="checkbox"] {
+	--callout-color: var(--new-callout-yellow); 
+	--callout-icon: check-circle;
+}
+
+
+/*### READ, BOOK, LECTURE ###*/
+
+.callout[data-callout="read"],
+.callout[data-callout="lecture"],
+.callout[data-callout="book"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: book;	
+}
+
+
+/*### WATCH, TV, SHOW, SERIE ###*/
+
+.callout[data-callout="watch"],
+.callout[data-callout="tv"],
+.callout[data-callout="show"],
+.callout[data-callout="serie"] {
+	--callout-color: var(--new-callout-tan); 
+	--callout-icon: clapperboard;
+}
+
+
+/*### LISTEN, MUSIC, LYRICS, SONG, SONGS ###*/
+
+.callout[data-callout="listen"],
+.callout[data-callout="music"],
+.callout[data-callout="lyrics"],
+.callout[data-callout="song"],
+.callout[data-callout="songs"] {
+	--callout-color: var(--new-callout-magenta); 
+	--callout-icon: music;
+}
+
+
+/*### DOING, HEARTBEAT, ACTIVITY ###*/
+
+.callout[data-callout="doing"],
+.callout[data-callout="heartbeat"],
+.callout[data-callout="activity"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: activity;
+}
+
+
+/*### READING ###*/
+
+.callout[data-callout="reading"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: book-marked;
+}
+
+
+/*### WATCHING, NETFLIX, CHILL ###*/
+
+.callout[data-callout="watching"],
+.callout[data-callout="netflix"],
+.callout[data-callout="chill"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: film;
+}
+
+
+/*### LISTENING ###*/
+
+.callout[data-callout="listening"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: speaker;
+}
+
+
+/*### DATE, MEETING, CALENDAR ###*/
+
+.callout[data-callout="date"],
+.callout[data-callout="calendar"],
+.callout[data-callout="meeting"] {
+	--callout-color: var(--new-callout-purple); 
+	--callout-icon: calendar;
+}
+
+
+/*### TIME, HOUR, CLOCK ###*/
+
+.callout[data-callout="time"],
+.callout[data-callout="hour"],
+.callout[data-callout="clock"] {
+	--callout-color: var(--new-callout-grey); 
+	--callout-icon: clock;
+}
+
+
+/*### MENTION ###*/
+
+.callout[data-callout="mention"] {
+	--callout-color: var(--new-callout-pink); 
+	--callout-icon: at-sign;
+}
+
+
+/*### RECEIPT, INVOICE ###*/
+
+.callout[data-callout="receipt"],
+.callout[data-callout="invoice"] {
+	--callout-color: var(--new-callout-tan); 
+	--callout-icon: receipt;
+}
+
+
+/*### RECYCLE, NATURE ###*/
+
+.callout[data-callout="recycle"],
+.callout[data-callout="nature"] {
+	--callout-color: var(--new-callout-lemon); 
+	--callout-icon: recycle;
+}
+
+
+/*### INBOX ###*/
+
+.callout[data-callout="inbox"] {
+	--callout-color: var(--new-callout-orange); 
+	--callout-icon: inbox;
+}
+
+
+/*### DESK, LAMP, REFLECTION ###*/
+
+.callout[data-callout="desk"],
+.callout[data-callout="reflection"],
+.callout[data-callout="lamp"] {
+	--callout-color: var(--new-callout-apple); 
+	--callout-icon: lamp-desk;
+}
+
+
+/*### LEAF, TREE, EVERGREEN ###*/
+
+.callout[data-callout="leaf"],
+.callout[data-callout="tree"],
+.callout[data-callout="evergreen"] {
+	--callout-color: var(--new-callout-green); 
+	--callout-icon: leaf;
+}
+
+
+/*### SNOW, COLD, SNOWFLAKE ###*/
+
+.callout[data-callout="snow"],
+.callout[data-callout="cold"],
+.callout[data-callout="snowflake"] {
+	--callout-color: var(--new-callout-cyan); 
+	--callout-icon: snowflake;
+}
+
+
+/*### SUN, BRIGHT, LIGHT ###*/
+
+.callout[data-callout="sun"],
+.callout[data-callout="hot"],
+.callout[data-callout="bright"],
+.callout[data-callout="light"] {
+	--callout-color: var(--new-callout-yellow); 
+	--callout-icon: sun;
+}
+
+
+/*### SPROUT, EVERGREEN, SEED ###*/
+
+.callout[data-callout="sprout"],
+.callout[data-callout="evergreen"],
+.callout[data-callout="seed"] {
+	--callout-color: var(--new-callout-green); 
+	--callout-icon: sprout;
+}
+
+
+/*### STICKER, STICKY-NOTE, STICKY, NOTE ###*/
+
+.callout[data-callout="sticky"],
+.callout[data-callout="sticky-note"],
+.callout[data-callout="sticker"] {
+	--callout-color: var(--new-callout-orange); 
+	--callout-icon: sticker;
+}
+
+
+/*### STORE ###*/
+
+.callout[data-callout="store"] {
+	--callout-color: var(--new-callout-tan); 
+	--callout-icon: store;
+}
+
+
+/*### RESTAURANT, DINNER, UTENSILS, FORK, LUNCH ###*/
+
+.callout[data-callout="restaurant"],
+.callout[data-callout="dinner"],
+.callout[data-callout="utensils"],
+.callout[data-callout="fork"],
+.callout[data-callout="lunch"] {
+	--callout-color: var(--new-callout-purple); 
+	--callout-icon: utensils;
+}
+
+
+/*### YOUTUBE, YT, VIDEO, YOUTUBER, CHANNEL ###*/
+
+.callout[data-callout="youtube"],
+.callout[data-callout="yt"],
+.callout[data-callout="video"],
+.callout[data-callout="youtuber"],
+.callout[data-callout="channel"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: youtube;
+}
+
+
+/*### TWITTER, TWIT, TWEET, TUIT, X ###*/
+
+.callout[data-callout="twitter"],
+.callout[data-callout="tweet"],
+.callout[data-callout="twit"],
+.callout[data-callout="tuit"],
+.callout[data-callout="x"] {
+	--callout-color: var(--new-callout-blue); 
+	--callout-icon: twitter;
+}
+
+
+/*### SHOPPING, KART, CART, GROCERY, GROCERIES ###*/
+
+.callout[data-callout="shopping"],
+.callout[data-callout="kart"],
+.callout[data-callout="cart"],
+.callout[data-callout="grocery"],
+.callout[data-callout="groceries"] {
+	--callout-color: var(--new-callout-orange); 
+	--callout-icon: shopping-bag;
+}
+
+
+/*### AI, ARTIFICIAL INTELLIGENCE, SPARKLE, SPARKLES ###*/
+
+.callout[data-callout="ai"],
+.callout[data-callout="artificial-intelligence"],
+.callout[data-callout="sparkle"],
+.callout[data-callout="sparkles"] {
+	--callout-color: var(--new-callout-yellow); 
+	--callout-icon: wand-2;
+}
+
+
+/*### LOCK, PRIVATE, PRIVACY ###*/
+
+.callout[data-callout="lock"],
+.callout[data-callout="private"],
+.callout[data-callout="privacy"] {
+	--callout-color: var(--new-callout-grey); 
+	--callout-icon: lock;
+}
+
+
+/*### GMAIL, EMAIL, MAIL ###*/
+
+.callout[data-callout="gmail"],
+.callout[data-callout="email"],
+.callout[data-callout="mail"] {
+	--callout-color: var(--new-callout-blue); 
+	--callout-icon: mail;
+}
+
+
+/*### MESSAGE, MESSAGES, WHATSAPP, SIGNAL ###*/
+
+.callout[data-callout="message"],
+.callout[data-callout="messages"],
+.callout[data-callout="messanger"],
+.callout[data-callout="whatsapp"],
+.callout[data-callout="signal"] {
+	--callout-color: var(--new-callout-green); 
+	--callout-icon: message-circle;
+}
+
+
+/*### LOCATION, PIN, PLACE ###*/
+
+.callout[data-callout="location"],
+.callout[data-callout="place"],
+.callout[data-callout="pin"] {
+	--callout-color: var(--new-callout-purple); 
+	--callout-icon: pin;
+}
+
+
+/*### MAP ###*/
+
+.callout[data-callout="map"] {
+	--callout-color: var(--new-callout-purple); 
+	--callout-icon: map;
+}
+
+
+/*### HOLIDAYS, VACATION, REST, BEACH ###*/
+
+.callout[data-callout="beach"],
+.callout[data-callout="rest"],
+.callout[data-callout="holidays"],
+.callout[data-callout="vacation"] {
+	--callout-color: var(--new-callout-yellow); 
+	--callout-icon: palmtree;
+}
+
+
+/*### DESIGN, ART, ARTISTIC ###*/
+
+.callout[data-callout="design"],
+.callout[data-callout="art"],
+.callout[data-callout="artistic"] {
+	--callout-color: var(--new-callout-pink); 
+	--callout-icon: brush;
+}
+
+
+/*### MOON, NIGHT, MIDNIGHT ###*/
+
+.callout[data-callout="moon"],
+.callout[data-callout="night"],
+.callout[data-callout="midnight"] {
+	--callout-color: var(--new-callout-cyan); 
+	--callout-icon: moon;
+}
+
+
+/*### MOUNTAIN, HIKING, HIKER, PATH, WALKING ###*/
+
+.callout[data-callout="mountain"],
+.callout[data-callout="hiking"],
+.callout[data-callout="hiker"],
+.callout[data-callout="path"],
+.callout[data-callout="walking"] {
+	--callout-color: var(--new-callout-green); 
+	--callout-icon: mountain-snow;
+}
+
+
+/*### WRENCH, TOOL ###*/
+
+.callout[data-callout="wrench"],
+.callout[data-callout="tool"] {
+	--callout-color: var(--new-callout-tan); 
+	--callout-icon: wrench;
+}
+
+
+/*### RECIPE, COOKING, COOK, CHEF ###*/
+
+.callout[data-callout="recipe"],
+.callout[data-callout="cooking"],
+.callout[data-callout="cook"],
+.callout[data-callout="chef"] {
+	--callout-color: var(--new-callout-pink); 
+	--callout-icon: chef-hat;
+}
+
+/*### App, Application, Plugin  ###*/
+
+.callout[data-callout="app"],
+.callout[data-callout="apps"],
+.callout[data-callout="application"],
+.callout[data-callout="plugin"] {
+	--callout-color: var(--new-callout-mist); 
+	--callout-icon: puzzle;
+}
+
+
+/*### INGREDIENT, INGREDIENTS ###*/
+
+.callout[data-callout="ingredient"],
+.callout[data-callout="ingredients"] {
+	--callout-color: var(--new-callout-yellow); 
+	--callout-icon: carrot;
+}
+
+
+/*### BOX, PACKAGE, PACKAGES, DELIVERY ###*/
+
+.callout[data-callout="box"],
+.callout[data-callout="package"],
+.callout[data-callout="packages"],
+.callout[data-callout="delivery"] {
+	--callout-color: var(--new-callout-magenta); 
+	--callout-icon: package;
+}
+
+
+/*### PAPERCLIP, PAPER, DOC, DOCS, DOCUMENT ###*/
+
+.callout[data-callout="paper"],
+.callout[data-callout="paperclip"],
+.callout[data-callout="doc"],
+.callout[data-callout="docs"],
+.callout[data-callout="documents"] {
+	--callout-color: var(--new-callout-blue); 
+	--callout-icon: paperclip;
+}
+
+
+/*### PARTY, POPPER, FIESTA, CELEBRATION ###*/
+
+.callout[data-callout="party"],
+.callout[data-callout="popper"],
+.callout[data-callout="fiesta"],
+.callout[data-callout="celebration"] {
+	--callout-color: var(--new-callout-magenta); 
+	--callout-icon: party-popper;
+}
+
+
+/*### ARCHIVE, PROPERTY, PROPERTIES ###*/
+
+.callout[data-callout="properties"],
+.callout[data-callout="Property"],
+.callout[data-callout="archive"] {
+	--callout-color: var(--new-callout-tan); 
+	--callout-icon: archive;
+}
+
+/*### HEALTH, HEART ###*/
+
+.callout[data-callout="health"],
+.callout[data-callout="heart"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: heart;
+}
+
+
+/*### BOT, ROBOT ###*/
+
+.callout[data-callout="bot"],
+.callout[data-callout="robot"] {
+	--callout-color: var(--new-callout-grey); 
+	--callout-icon: bot;
+}
+
+
+/*### PROJECTS ###*/
+
+.callout[data-callout="projects"] {
+	--callout-color: var(--new-callout-blue); 
+	--callout-icon: boxes;
+}
+
+
+/*### PROJECT ###*/
+
+.callout[data-callout="project"] {
+	--callout-color: var(--new-callout-apple); 
+	--callout-icon: box;
+}
+
+
+/*### CODE, SNIPPET ###*/
+
+.callout[data-callout="code"],
+.callout[data-callout="snippet"] {
+	--callout-color: var(--new-callout-grey); 
+	--callout-icon: code-2;
+}
+
+
+/*### COMMAND, SHORTCUT, HOTKEY ###*/
+
+.callout[data-callout="command"],
+.callout[data-callout="shortcut"],
+.callout[data-callout="hotkey"] {
+	--callout-color: var(--new-callout-grey); 
+	--callout-icon: command;
+}
+
+
+/*### CONTACT, PEOPLE, TEAM, CREW, USERS ###*/
+
+.callout[data-callout="contact"],
+.callout[data-callout="people"],
+.callout[data-callout="team"],
+.callout[data-callout="crew"],
+.callout[data-callout="users"] {
+	--callout-color: var(--new-callout-cyan); 
+	--callout-icon: contact;
+}
+
+
+/*### EFFORT, MILESTONE, META, GOAL ###*/
+
+.callout[data-callout="effort"],
+.callout[data-callout="efforts"],
+.callout[data-callout="milestone"],
+.callout[data-callout="meta"],
+.callout[data-callout="goal"] {
+	--callout-color: var(--new-callout-lemon); 
+	--callout-icon: milestone;
+}
+
+
+/*### PLANET, EARTH ###*/
+
+.callout[data-callout="planet"],
+.callout[data-callout="earth"] {
+	--callout-color: var(--new-callout-blue); 
+	--callout-icon: globe-2;
+}
+
+
+/*### NAVIGATION, COMPASS ###*/
+
+.callout[data-callout="navigation"],
+.callout[data-callout="navigator"],
+.callout[data-callout="compass"] {
+	--callout-color: var(--new-callout-pink); 
+	--callout-icon: compass;
+}
+
+/*### DICE, DICES, ROLE ###*/
+
+.callout[data-callout="dice"],
+.callout[data-callout="role"],
+.callout[data-callout="dices"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: dices;
+}
+
+
+
+/*### GAME, GAMING, VIDEOGAME ###*/
+
+.callout[data-callout="game"],
+.callout[data-callout="gaming"],
+.callout[data-callout="videogame"] {
+	--callout-color: var(--new-callout-tan); 
+	--callout-icon: gamepad-2;
+}
+
+
+/*### STAR, FAVORITE, FAVOURITE ###*/
+
+.callout[data-callout="star"],
+.callout[data-callout="favorite"],
+.callout[data-callout="favourite"] {
+	--callout-color: var(--new-callout-yellow); 
+	--callout-icon: star;
+}
+
+
+
+
+
+/*### LINK, LINKS, REFERENCE, REFERENCES ###*/
+
+.callout[data-callout="link"],
+.callout[data-callout="links"],
+.callout[data-callout="reference"],
+.callout[data-callout="references"] {
+	--callout-color: var(--new-callout-grey); 
+	--callout-icon: link;
+}
+
+
+/*### TABLE, TABLES ###*/
+
+.callout[data-callout="table"],
+.callout[data-callout="tables"] {
+	--callout-color: var(--new-callout-lemon); 
+	--callout-icon: table-2;
+}
+
+
+/*### EMPTY, TRANSPARENT, VOID, HEADING, TITLE ###*/
+
+.callout[data-callout="empty"],
+.callout[data-callout="transparent"],
+.callout[data-callout="void"],
+.callout[data-callout="heading"],
+.callout[data-callout="table"],
+.callout[data-callout="#"],
+.callout[data-callout="toc"],
+.callout[data-callout="title"] {
+	--callout-color: var(--new-callout-empty); 
+	--callout-icon: heading;
+	border: 1px solid;
+	border-color: var(--text-faint);
+}
+
+
+
+
+
+/*############### BY COLORS WITH ICON ###############*/
+
+.callout[data-callout="blue"] {
+	--callout-color: var(--new-callout-blue); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="cyan"] {
+	--callout-color: var(--new-callout-cyan); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="red"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="purple"] {
+	--callout-color: var(--new-callout-purple); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="magenta"] {
+	--callout-color: var(--new-callout-magenta); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="pink"] {
+	--callout-color: var(--new-callout-pink); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="orange"] {
+	--callout-color: var(--new-callout-orange); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="yellow"] {
+	--callout-color: var(--new-callout-yellow); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="mist"] {
+	--callout-color: var(--new-callout-mist); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="green"] {
+	--callout-color: var(--new-callout-green); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="lemon"] {
+	--callout-color: var(--new-callout-lemon); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="apple"] {
+	--callout-color: var(--new-callout-apple); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="grey"] {
+	--callout-color: var(--new-callout-grey); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="tan"] {
+	--callout-color: var(--new-callout-tan); 
+	--callout-icon: palette;
+}
+
+.callout[data-callout="none"],
+.callout[data-callout="no"] {
+	--callout-color: var(--new-callout-empty); 
+	--callout-icon: palette;
+	border: 1px solid;
+	border-color: var(--text-faint);
+}
+
+
+
+
+
+
+
+/*############### BY COLORS WITH NO ICON ###############*/
+
+.callout[data-callout="bluex"] {
+	--callout-color: var(--new-callout-blue); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="cyanx"] {
+	--callout-color: var(--new-callout-cyan); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="redx"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="purplex"] {
+	--callout-color: var(--new-callout-purple); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="magentax"] {
+	--callout-color: var(--new-callout-magenta); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="pinkx"] {
+	--callout-color: var(--new-callout-pink); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="orangex"] {
+	--callout-color: var(--new-callout-orange); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="yellowx"] {
+	--callout-color: var(--new-callout-yellow); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="mistx"] {
+	--callout-color: var(--new-callout-mist); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="greenx"] {
+	--callout-color: var(--new-callout-green); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="lemonx"] {
+	--callout-color: var(--new-callout-lemon); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="applex"] {
+	--callout-color: var(--new-callout-apple); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="greyx"] {
+	--callout-color: var(--new-callout-grey); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="tanx"] {
+	--callout-color: var(--new-callout-tan); 
+	--callout-icon: none;
+}
+
+.callout[data-callout="nonex"],
+.callout[data-callout="nox"] {
+	--callout-color: var(--new-callout-empty); 
+	--callout-icon: none;
+	border: 1px solid;
+	border-color: var(--text-faint);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,249 @@
+
+/* table color is changed here(for tabbed callouts).... */
+/* .tabs-container .tabs-nav {
+  background-color: rgba(41, 100, 41, 0.881);
+}
+.tabs-container > .tabs-contents {
+  background-color: rgb(26, 23, 61);
+}
+h2, .cm-header-2, body.doc-title-h2 .inline-title {
+  -webkit-text-fill-color: #8ca6ff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(var(--gradientDegree), var(--orange) 0, var(--yellow) 100%);
+} */
+/* file and folder icon added here */
+/* for catpuccine theme and other themes without file and folder icons use this css */
+/* .tree-item-self .tree-item-icon:before {
+  content: '\e930';
+  font-family: 'IcoMoon-Free';
+}
+.tree-item-self .tree-item-icon:before{
+  content: '📂';
+}
+
+.nav-file .nav-file-title[data-path$=".md"]::before {
+  content: "📄";
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.nav-file .nav-file-title[data-path]::before {
+  -webkit-mask-repeat: no-repeat;
+  background-color: transparent;
+  mask-repeat: no-repeat;
+  content: "📄";
+  display: flex;
+  flex-shrink: 0;
+  height: var(--size-4-4);
+  margin-left: calc(-1* var(--size-4-5));
+  opacity: var(--icon-opacity);
+  position: absolute;
+  width: var(--size-4-4);
+} */
+/* file and folder title color matching done */
+/* .nav-file-title, .nav-folder-title {
+    margin-bottom: var(--size-2-1);
+    display: flex;
+    border-radius: var(--radius-s);
+    cursor: var(--cursor);
+    background-image: linear-gradient(var(--gradientDegree), rgba(250, 91, 152, 0.865) 0, var(--orange) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+} */
+/* Styles added for widgets plugin */
+.Clock__am-pm {
+	display: none;
+}
+.Clock__time-container {
+	margin-bottom: 0.2em;
+}
+.Clock_Face{
+  background-color: #362424;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+.Clock__time {
+  color: #ffc9c9;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.2em;
+}
+
+/* code block color */
+.markdown-rendered pre {
+  border-left: solid;
+}
+
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  border-left: solid;
+}
+/* ******** */
+
+/*
+MIT License
+
+Copyright (c) 2022 kneecaps
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+*/
+
+/* reading mode */
+.markdown-rendered pre {
+  border: solid var(--color-accent);
+  border-radius: var(--radius-m);
+  box-shadow: var(--shadow-lm-only);
+}
+
+/* live preview */
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  background: var(--code-background);
+  border-top: solid var(--color-accent);
+  /* stylelint-disable-next-line declaration-no-important */
+  border-top-right-radius: 8px !important;
+  /* stylelint-disable-next-line declaration-no-important */
+  border-top-left-radius: 8px !important;
+  margin-top: 8px;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  background: var(--code-background);
+  border-bottom: solid var(--color-accent);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  border-right: solid var(--color-accent);
+  border-left: solid var(--color-accent);
+}
+
+
+/* calender color */
+/*
+author: sailKite
+source: https://discord.com/channels/686053708261228577/702656734631821413/1168178314318458980
+*/
+
+.container#calendar-container .calendar {
+  & > thead > tr:first-of-type {
+    & > th:nth-child(1) {
+      color: red;
+    }
+    & > th:nth-child(2) {
+      color: orange;
+    }
+    & > th:nth-child(3) {
+      color: yellow;
+    }
+    & > th:nth-child(4) {
+      color: green;
+    }
+    & > th:nth-child(5) {
+      color: blue;
+    }
+    & > th:nth-child(6) {
+      color: indigo;
+    }
+    & > th:nth-child(7) {
+      color: violet;
+    }
+  }
+}
+/* Command palette styling */
+/* .prompt {
+  border: solid var(--text-accent);
+  opacity: 0.9;
+}
+
+.suggestion-highlight {
+  text-decoration: none;
+  color: var(--text-accent);
+}
+
+.suggestion-item.is-selected {
+  border: solid var(--text-accent);
+  border-radius: 14px;
+}
+
+.suggestion-hotkey {
+  background-color: var(--text-accent);
+  color: black;
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.prompt-instruction {
+  font-weight: 500;
+}
+
+.prompt-instruction-command {
+  background-color: rgb(250, 252, 255, 0.5);
+  color: black;
+  border-radius: 10px;
+  padding: 0 3px 0 3px;
+}
+ */
+/* Excalidraw css styles */
+
+.excalidraw {
+    --default-button-size: 4rem !important;
+    --default-icon-size: 2rem !important;
+    --lg-button-size: 1.8rem !important;
+    --lg-icon-size: 2rem !important;
+}
+.excalidraw .sidebar-trigger {
+  padding: 0;
+}
+.mobile-misc-tools-container{
+  padding: 0.8rem;
+  gap: 1rem;
+}
+.excalidraw .dropdown-menu .dropdown-menu-item-base {
+    box-sizing: border-box;
+    color: var(--color-on-surface);
+    column-gap: .625rem;
+    display: flex;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+}
+.excalidraw [data-testid="canvas-background-label"] {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.5rem !important;
+}
+.excalidraw .dropdown-menu .dropdown-menu-item svg {
+    width: 2rem;
+    height: 2rem;
+
+}
+.excalidraw .selected-shape-actions .control-label, .excalidraw .selected-shape-actions h3, .excalidraw .selected-shape-actions legend {
+    color: var(--text-primary-color);
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 .25rem;
+}
+.excalidraw .App-mobile-menu {
+    width: 20rem !important;
+}
+/* Font change of file and folder names in files section for Dracula theme */
+/* .nav-files-container {
+    font-family: 'Comic Sans MS';
+} */
