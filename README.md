@@ -22,3 +22,6 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
   <img width="1267" height="808" alt="Screenshot 2025-08-26 210151" src="https://github.com/user-attachments/assets/f24868cc-e79e-4b8a-b00f-6bcda15af1df" />
   <img width="1163" height="766" alt="Screenshot 2025-08-26 210309" src="https://github.com/user-attachments/assets/a87642ae-c9a1-4b10-ace9-bcd8eda29bc3" />
  
+
+
+BTW, if anyone is interested in doccumenting all these css styles feel free to fork the repo and add these doccumentation. It will be really a big help.
