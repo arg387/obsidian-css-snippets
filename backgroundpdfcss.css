@@ -1,6 +1,6 @@
 
 /* table color is changed here(for tabbed callouts).... */
-/* .tabs-container .tabs-nav {
+.tabs-container .tabs-nav {
   background-color: rgba(41, 100, 41, 0.881);
 }
 .tabs-container > .tabs-contents {
@@ -11,21 +11,20 @@ h2, .cm-header-2, body.doc-title-h2 .inline-title {
   background-clip: text;
   -webkit-background-clip: text;
   background-image: linear-gradient(var(--gradientDegree), var(--orange) 0, var(--yellow) 100%);
-} */
+} 
 /* file and folder icon added here */
 /* for catpuccine theme and other themes without file and folder icons use this css */
-/* .tree-item-self .tree-item-icon:before {
-  content: '\e930';
-  font-family: 'IcoMoon-Free';
-}
-.tree-item-self .tree-item-icon:before{
-  content: '📂';
+
+.tree-item.is-collapsed .tree-item-self .tree-item-icon:before {
+    content: '📁'; /* closed folder */
 }
 
-.nav-file .nav-file-title[data-path$=".md"]::before {
-  content: "📄";
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+.tree-item:not(.is-collapsed) .tree-item-self .tree-item-icon:before {
+    content: '📂'; /* open folder */
+}
+.tree-item-self .tree-item-icon{
+  font-size: 1.2em;
+  margin-right: 0.2em;
 }
 .nav-file .nav-file-title[data-path]::before {
   -webkit-mask-repeat: no-repeat;
@@ -39,17 +38,8 @@ h2, .cm-header-2, body.doc-title-h2 .inline-title {
   opacity: var(--icon-opacity);
   position: absolute;
   width: var(--size-4-4);
-} */
-/* file and folder title color matching done */
-/* .nav-file-title, .nav-folder-title {
-    margin-bottom: var(--size-2-1);
-    display: flex;
-    border-radius: var(--radius-s);
-    cursor: var(--cursor);
-    background-image: linear-gradient(var(--gradientDegree), rgba(250, 91, 152, 0.865) 0, var(--orange) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-} */
+}
+
 /* Styles added for widgets plugin */
 .Clock__am-pm {
 	display: none;
@@ -166,7 +156,7 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11681
   }
 }
 /* Command palette styling */
-/* .prompt {
+ .prompt {
   border: solid var(--text-accent);
   opacity: 0.9;
 }
@@ -198,7 +188,7 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11681
   border-radius: 10px;
   padding: 0 3px 0 3px;
 }
- */
+ 
 /* Excalidraw css styles for big icons*/
 
 .excalidraw {
@@ -244,7 +234,8 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11681
     width: 20rem !important;
 }
 /* Font change of file and folder names in files section for Dracula theme */
-/* .nav-files-container {
+.nav-files-container {
     font-family: 'Comic Sans MS';
 
-} */
+} 
+
