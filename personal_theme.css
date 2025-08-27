@@ -1,4 +1,6 @@
 
+/* I am slowly integrating all of my css files into one usuable theme here so there will be a lot of upgrades coming. */
+/* My edits */
 .workspace-tabs .workspace-leaf .view-content {
     height: 100%;
     background: #000000;
@@ -66,18 +68,18 @@ div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
     background: #091e20d8;
 }
 /* for adding file and folder icons beside file names*/
-.tree-item-self .tree-item-icon:before {
-  content: '\e930';
-  font-family: 'IcoMoon-Free';
-}
-.tree-item-self .tree-item-icon:before{
-  content: '📂';
+
+
+.tree-item.is-collapsed .tree-item-self .tree-item-icon:before {
+    content: '📁'; /* closed folder */
 }
 
-.nav-file .nav-file-title[data-path$=".md"]::before {
-  content: "📄";
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
+.tree-item:not(.is-collapsed) .tree-item-self .tree-item-icon:before {
+    content: '📂'; /* open folder */
+}
+.tree-item-self .tree-item-icon{
+  font-size: 1.2em;
+  margin-right: 0.2em;
 }
 .nav-file .nav-file-title[data-path]::before {
   -webkit-mask-repeat: no-repeat;
@@ -92,7 +94,106 @@ div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
   position: absolute;
   width: var(--size-4-4);
 }
+/* Command palette styling */
+.prompt {
+  border: solid var(--text-accent);
+  opacity: 0.9;
+}
 
+.suggestion-highlight {
+  text-decoration: none;
+  color: var(--text-accent);
+}
+
+.suggestion-item.is-selected {
+  border: solid var(--text-accent);
+  border-radius: 14px;
+}
+
+.suggestion-hotkey {
+  background-color: var(--text-accent);
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-weight: 500;
+}
+
+.prompt-instruction {
+  font-weight: 500;
+}
+
+.prompt-instruction-command {
+  background-color: rgb(250, 252, 255, 0.5);
+  color: black;
+  border-radius: 10px;
+  padding: 0 3px 0 3px;
+}
+
+
+/* Settings panel styling */
+.modal-container.mod-dim .modal {
+    box-shadow: var(--shadow-l);
+    opacity: 0.7;
+}
+.horizontal-tab-content, .vertical-tab-content {
+    padding-inline-start: var(--size-4-12);
+    padding-inline-end: var(--size-4-12);
+    container-type: inline-size;
+    background-color: #000000;
+    color: #ffffff;
+    font: 400 14px 'Comic Sans MS', sans-serif;
+}
+.vertical-tab-header {
+    padding: var(--size-4-3);
+    background-color: #000000;
+    font: 400 14px 'Comic Sans MS', sans-serif;
+    color: #ffffff;
+}
+/* Excalidraw css styles */
+
+.excalidraw {
+    --default-button-size: 4rem !important;
+    --default-icon-size: 2rem !important;
+    --lg-button-size: 1.8rem !important;
+    --lg-icon-size: 2rem !important;
+}
+.excalidraw .sidebar-trigger {
+  padding: 0;
+}
+.mobile-misc-tools-container{
+  padding: 0.8rem;
+  gap: 1rem;
+}
+.excalidraw .dropdown-menu .dropdown-menu-item-base {
+    box-sizing: border-box;
+    color: var(--color-on-surface);
+    column-gap: .625rem;
+    display: flex;
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+}
+.excalidraw [data-testid="canvas-background-label"] {
+    font-size: 1.4rem !important;
+    margin-bottom: 0.5rem !important;
+}
+.excalidraw .dropdown-menu .dropdown-menu-item svg {
+    width: 2rem;
+    height: 2rem;
+
+}
+.excalidraw .selected-shape-actions .control-label, .excalidraw .selected-shape-actions h3, .excalidraw .selected-shape-actions legend {
+    color: var(--text-primary-color);
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 0 0 .25rem;
+}
+.excalidraw .App-mobile-menu {
+    width: 20rem !important;
+}
+
+/* ************************************************************* */
 /* ************************************************************* */
 /* for coloring file and folder titles */
 /*This part's author: sailKite
@@ -154,57 +255,3 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: rgb(203, 166, 247);
 }
 /* ****************************************************************** */
-/* Command palette styling */
-.prompt {
-  border: solid var(--text-accent);
-  opacity: 0.9;
-}
-
-.suggestion-highlight {
-  text-decoration: none;
-  color: var(--text-accent);
-}
-
-.suggestion-item.is-selected {
-  border: solid var(--text-accent);
-  border-radius: 14px;
-}
-
-.suggestion-hotkey {
-  background-color: var(--text-accent);
-  color: rgb(0, 0, 0);
-  border-radius: 10px;
-  font-weight: 500;
-}
-
-.prompt-instruction {
-  font-weight: 500;
-}
-
-.prompt-instruction-command {
-  background-color: rgb(250, 252, 255, 0.5);
-  color: black;
-  border-radius: 10px;
-  padding: 0 3px 0 3px;
-}
-/* ************************************************************* */
-
-/* Settings panel styling */
-.modal-container.mod-dim .modal {
-    box-shadow: var(--shadow-l);
-    opacity: 0.7;
-}
-.horizontal-tab-content, .vertical-tab-content {
-    padding-inline-start: var(--size-4-12);
-    padding-inline-end: var(--size-4-12);
-    container-type: inline-size;
-    background-color: #000000;
-    color: #ffffff;
-    font: 400 14px 'Comic Sans MS', sans-serif;
-}
-.vertical-tab-header {
-    padding: var(--size-4-3);
-    background-color: #000000;
-    font: 400 14px 'Comic Sans MS', sans-serif;
-    color: #ffffff;
-}
