@@ -1,0 +1,12 @@
+body{
+  --checklist-done-color: rgb(79, 220, 138);
+}
+/* decoration for mcq items just use - [m] beside your answer */
+ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
+    text-decoration: none;
+    color: var(--checklist-done-color);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="m"] {
+    text-decoration: none;
+    color: var(--checklist-done-color);
+}
