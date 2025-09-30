@@ -734,12 +734,9 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
 */
 
 /* updated snippet for v1.6.3  */
-/* Added my own colors */
+/* Added my own colors and edited some lines */
 
-.nav-folder-children > .nav-folder,
-.nav-files-container > div > .nav-folder {
-  --nav-item-color: var(--nav-item-color);
-}
+
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:hover {
   filter: brightness(0.9);
@@ -789,4 +786,5 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
+
 
