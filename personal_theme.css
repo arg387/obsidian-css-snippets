@@ -8,7 +8,10 @@
   --dark-6: rgb(41, 44, 60);
   --light: rgb(255, 255, 255);
   --font-weight-600: 600;
+  --font-weight-500: 500;
+  --font-weight-800: 800;
   --light-1: rgb(183, 192, 228);
+  --light-2: rgb(198, 208, 245);
   --dark-green: #091e20d8;
   --box-shadow-mn: 1px 1px 1px grey;
   --background-lav-1: rgb(186, 187, 241);
@@ -264,6 +267,7 @@ button.mod-cta{
     }
 }
 /* Excalidraw css styles */
+
 
 .excalidraw {
   --default-button-size: 4rem !important;
@@ -560,95 +564,71 @@ body.styled-scrollbars .modal-close-button {
 
 
 /* Changes styles for tag elements in markdown view and editor view.  */
-a.tag:nth-child(7n+1),
-.cm-hashtag:nth-child(7n+1){
+a.tag,
+.cm-hashtag.cm-hashtag-begin,
+.cm-hashtag.cm-hashtag-end{
   --tag-color: var(--dark);
   --tag-color-hover: var(--dark);
   --tag-color-remove: var(--dark);
   --tag-color-remove-hover: var(--dark);
+  font-weight: var(--font-weight-600);
+}
+
+a.tag:nth-child(7n+1),
+.cm-hashtag.cm-hashtag-begin:nth-child(7n+1),
+.cm-hashtag.cm-hashtag-end:nth-child(7n+1){
   --tag-background: #FFD166;
   --tag-background-hover: #E6B84D;
   --tag-border-color: #FFD166;
   --tag-border-color-hover: #FFD166;
-  font-weight: var(--font-weight-600);
 }
 a.tag:nth-child(7n+2),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+2),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+2){
-  --tag-color: var(--dark);
-  --tag-color-hover: var(--dark);
-  --tag-color-remove: var(--dark);
-  --tag-color-remove-hover: var(--dark);
   --tag-background: #FFF34D;
   --tag-background-hover: #E6D933;
   --tag-border-color: #FFF34D;
   --tag-border-color-hover: #FFF34D;
-  font-weight: var(--font-weight-600);
 }
 a.tag:nth-child(7n+3),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+3),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+3){
-  --tag-color: var(--dark);
-  --tag-color-hover: var(--dark);
-  --tag-color-remove: var(--dark);
-  --tag-color-remove-hover: var(--dark);
   --tag-background: #5FFFD1;
   --tag-background-hover: #3FD5AD;
   --tag-border-color: #5FFFD1;
   --tag-border-color-hover: #5FFFD1;
-  font-weight: var(--font-weight-600);
 }
 a.tag:nth-child(7n+4),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+4),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+4){
-  --tag-color: var(--dark);
-  --tag-color-hover: var(--dark);
-  --tag-color-remove: var(--dark);
-  --tag-color-remove-hover: var(--dark);
   --tag-background: #9FE0FF;
   --tag-background-hover: #81B7D0;
   --tag-border-color: #99D5F1;
   --tag-border-color-hover: #99D5F1;
-  font-weight: var(--font-weight-600);
 }
 a.tag:nth-child(7n+5),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+5),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+5){
-  --tag-color: var(--dark);
-  --tag-color-hover: var(--dark);
-  --tag-color-remove: var(--dark);
-  --tag-color-remove-hover: var(--dark);
   --tag-background: #FFCEE2;
   --tag-background-hover: #E8B9CC;
   --tag-border-color: #EFC4D6;
   --tag-border-color-hover: #EFC4D6;
-  font-weight: var(--font-weight-600);
 }
 a.tag:nth-child(7n+6),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+6),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+6){
-  --tag-color: var(--dark);
-  --tag-color-hover: var(--dark);
-  --tag-color-remove: var(--dark);
-  --tag-color-remove-hover: var(--dark);
   --tag-background: #FFAA85;
   --tag-background-hover: #E6916D;
   --tag-border-color: #FFAA85;
   --tag-border-color-hover: #FFAA85;
-  font-weight: var(--font-weight-600);
 }
 a.tag:nth-child(7n+7),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+7),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+7){
-  --tag-color: var(--dark);
-  --tag-color-hover: var(--dark);
-  --tag-color-remove: var(--dark);
-  --tag-color-remove-hover: var(--dark);
   --tag-background: #f7cdff;
   --tag-background-hover: #e2b5e0;
   --tag-border-color: #efc5f3;
   --tag-border-color-hover: #efc5f3;
-  font-weight: var(--font-weight-600);
 }
 
 select, .combobox-button, .dropdown{
@@ -682,6 +662,11 @@ select, .combobox-button, .dropdown{
 .workspace > .workspace-split:not(.mod-root) .metadata-container {
     --metadata-divider-width: 0;
 }
+/* bold text color */
+b, strong {
+  font-weight: var(--font-weight-800);
+  color: var(--light-2);
+}
 
 /* @settings
 name: Header Styling
@@ -714,17 +699,6 @@ body.center-all-header-reading h6 {
 .mod-root .workspace-tab-header-status-icon {
   color: #f7cdff;
 }
-/* This part is inside mcq.css file so i commented it */
-
-/* 
-ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
-    text-decoration: none;
-    color: var(--checklist-done-color);
-}
-.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="m"] {
-    text-decoration: none;
-    color: var(--checklist-done-color);
-} */
 
 /* ************************************************************* */
 /* ************************************************************* */
@@ -734,7 +708,7 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
 */
 
 /* updated snippet for v1.6.3  */
-/* Added my own colors and edited some lines */
+/* Added my own colors here */
 
 
 .nav-folder-children > .nav-folder,
@@ -786,5 +760,3 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
-
-
