@@ -224,10 +224,14 @@ div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
 }
 
 .prompt-instruction-command {
-  background-color: rgb(250, 252, 255, 0.5);
-  color: black;
+  background-color: rgb(0 0 0 / 50%);
+  color: var(--light);
   border-radius: 10px;
   padding: 0 3px 0 3px;
+}
+
+.search-input-clear-button:after {
+    background-color: rgb(228, 29, 29);
 }
 
 /* plugin panel styling */
@@ -760,3 +764,4 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
+
