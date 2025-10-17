@@ -30,8 +30,9 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
 <br>
 
 - other CSS files
-  <img width="1267" height="808" alt="Screenshot 2025-08-26 210151" src="https://github.com/user-attachments/assets/f24868cc-e79e-4b8a-b00f-6bcda15af1df" />
-  <img width="1163" height="766" alt="Screenshot 2025-08-26 210309" src="https://github.com/user-attachments/assets/a87642ae-c9a1-4b10-ace9-bcd8eda29bc3" />
+<img width="1919" height="1073" alt="Screenshot 2025-10-17 123519" src="https://github.com/user-attachments/assets/dbb5fd0a-6dc2-4a83-8970-b5ea160d96db" />
+<img width="1867" height="1005" alt="Screenshot 2025-10-17 123229" src="https://github.com/user-attachments/assets/37bb1bb6-3487-4c01-9b3a-7740a0c0bb7f" />
+
 
 <br>
 <img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/3996e69d-1096-4685-9325-43e1a334488b" />
