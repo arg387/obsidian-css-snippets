@@ -1,7 +1,7 @@
 # obsidian-css-snippets
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/arg387/obsidian-css-snippets)
-<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Update Date-27/08/2025-blueviolet?style=flat"></a>
+<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Update Date-17/10/2025-blueviolet?style=flat"></a>
 
 ![GitHub watchers](https://img.shields.io/github/watchers/arg387/obsidian-css-snippets)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arg387.obsidian-css-snippets)
