@@ -85,11 +85,16 @@ body{
 .workspace .mod-root .workspace-tab-header:not(.is-active) {
   border: 1px solid #0f0f0f;
 }
+/* Checkbox */
+
+input[type=checkbox] {
+  border-radius: 8px;
+}
 @media (hover: hover) {
-    input[type=checkbox]:checked:hover {
-        background-color: var(--checkbox-color-hover);
-        border-color: var(--checkbox-color-hover-border);
-    }
+  input[type=checkbox]:checked:hover {
+      background-color: var(--checkbox-color-hover);
+      border-color: var(--checkbox-color-hover-border);
+  }
 }
 /* Search page background */
 .workspace-leaf-content {
@@ -764,4 +769,5 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
+
 
