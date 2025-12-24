@@ -2,6 +2,8 @@
   /* This theme does not work well for light theme. */
 *{
   --dark: rgb(0, 0, 0);
+  --dark-1:rgb(15, 15, 15);
+  --dark-2: rgb(20, 20, 24); 
   --dark-4: rgb(24, 24, 21);
   --dark-3: rgb(65, 69, 89);
   --dark-5: rgb(9, 4, 4);
@@ -12,7 +14,7 @@
   --font-weight-800: 800;
   --light-1: rgb(183, 192, 228);
   --light-2: rgb(198, 208, 245);
-  --dark-green: #091e20d8;
+  --dark-green: rgba(9, 30, 32, 0.847);
   --box-shadow-mn: 1px 1px 1px grey;
   --background-lav-1: rgb(186, 187, 241);
   --red-light-1: rgb(235, 188, 186);
@@ -52,7 +54,7 @@ body{
   --code-border: solid var(--red-light-1);
   --markdown-font-family: "Merienda", cursive;
   --other-font-family: 'Comic Sans MS', sans-serif;
-  --checkbox-marker-color: #000000a6;
+  --checkbox-marker-color: rgba(0, 0, 0, 0.651);
   --checkbox-color-hover-border: rgb(241, 161, 161);
   --checkbox-color-hover: rgb(212, 133, 130);
   --checkbox-color: var(--red-light-1);
@@ -83,7 +85,7 @@ body{
   border: 1px dashed var(--red-light-2);
 }
 .workspace .mod-root .workspace-tab-header:not(.is-active) {
-  border: 1px solid #0f0f0f;
+  border: 1px solid var(--dark-1);
 }
 /* Checkbox */
 
@@ -101,12 +103,12 @@ input[type=checkbox] {
   background: var(--dark);
 }
 .suggestion-container.mod-search-suggestion .suggestion {
-  background-color: #010101;
+  background-color: rgb(1, 1, 1);
 }
 /*******/
 
 body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-profile {
-  background-color: #0e0808;
+  background-color: rgb(14, 8, 8);
   border-top: var(--tab-outline-width) solid var(--tab-outline-color);
   display: var(--vault-profile-display);
   align-items: center;
@@ -129,10 +131,10 @@ body.is-focused .titlebar, body.is-focused .workspace-ribbon.mod-left {
   width: 100%;
   align-items: center;
   height: var(--bases-table-row-height);
-  background: #141418;
+  background: var(--dark-2);
 }
 .is-focused .workspace-leaf.mod-active .view-header {
-  background-color: rgb(20, 20, 24);
+  background-color: var(--dark-2);
 }
 .workspace .mod-root .workspace-tab-header {
   -webkit-app-region: no-drag;
@@ -143,7 +145,7 @@ body.is-focused .titlebar, body.is-focused .workspace-ribbon.mod-left {
   min-width: 0;
   max-width: var(--tab-max-width);
   padding: 1px 3px 3.5px;
-  background: #141418;
+  background: var(--dark-2);
 }
 .nav-files-container {
   font-family: 'Comic Sans MS';
@@ -173,7 +175,7 @@ div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
   font-size: 1.2em;
   margin-right: 0.2em;
 }
-.workspace-leaf-content[data-type="file-explorer"] .nav-file-title .nav-file-title-content::before {
+body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content::before {
   -webkit-mask-repeat: no-repeat;
   background-color: transparent;
   mask-repeat: no-repeat;
@@ -198,7 +200,12 @@ div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".pdf"]:not(.is-active))>.nav-file-title-content::before{
   content: "📕";
 }
-
+body:not(.nav-file-indicators) .nav-file .nav-file-title[data-path*=".canvas"] .nav-file-title-content::before {
+  content: '🧩';
+}
+body:not(.nav-file-indicators) .nav-file .nav-file-title:is([data-path*=".excalidraw"]) .nav-file-title-content::before {
+  content: '🖍️';
+}
 .nav-file-title, .nav-folder-title{
   margin-bottom: 6px;
 }
@@ -219,7 +226,7 @@ div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
 }
 .suggestion-hotkey {
   background-color: var(--red-light-1);
-  color: rgb(0, 0, 0);
+  color: var(--dark);
   border-radius: 10px;
   font-weight: 500;
 }
@@ -244,7 +251,7 @@ div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
   opacity: 0.9;
 }
 .modal-sidebar {
-  --background-modifier-form-field: #1a1717;
+  --background-modifier-form-field: rgb(26, 23, 23);
   background-color: var(--dark);
 }
 
@@ -279,8 +286,7 @@ button.mod-cta{
 
 
 .excalidraw {
-  --default-button-size: 4rem !important;
-  --default-icon-size: 2rem !important;
+  --default-button-size: 2rem !important;
   --lg-button-size: 1.8rem !important;
   --lg-icon-size: 2rem !important;
 }
@@ -320,6 +326,7 @@ button.mod-cta{
 .excalidraw .App-mobile-menu {
   width: 20rem !important;
 }
+
 /* code block color */
 .markdown-rendered pre {
   border-left: solid;
@@ -381,7 +388,7 @@ body.styled-scrollbars .modal-close-button {
   font-feature-settings: "case";
 }
 .document-search-close-button, .modal-close-button:hover {
-  background: #bc1414;
+  background: rgb(188, 20, 20);
   color: var(--dark);
 }
 /* Settings sidebar styling inspired by primary theme of Obsidian and sailKite */
@@ -444,37 +451,37 @@ body.styled-scrollbars .modal-close-button {
   color: var(--light);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+1){
-  color: #FF9E5C;
+  color: rgb(255, 158, 92);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+2){
-  color: #FF80BF;
+  color: rgb(255, 128, 191);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+3){
-  color: #CBA6F7
+  color: rgb(203, 166, 247)
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+4){
-  color: #7CFFD5;
+  color: rgb(124, 255, 213);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+5){
-  color: #5AC8FA;
+  color: rgb(90, 200, 250);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+6){
-  color: #FFD86B;
+  color: rgb(255, 216, 107);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+7){
-  color: #FF5D73;
+  color: rgb(255, 93, 115);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+8){
-  color: #A78BFA;
+  color: rgb(167, 139, 250);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+9){
-  color: #9EE493;
+  color: rgb(158, 228, 147);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+10){
-  color: #FF6FF2;
+  color: rgb(255, 111, 242);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon:not(.is-active):hover:nth-child(11n+11){
-  color: #40E0D0;
+  color: rgb(64, 224, 208);
 }
 /* for markdown */
 .markdown-preview-view{
@@ -484,7 +491,7 @@ body.styled-scrollbars .modal-close-button {
   font-family: var(--markdown-font-family);
 }
 .clickable-icon[aria-disabled='true'] {
-  color: #eaeaea;
+  color: rgb(234, 234, 234);
   opacity: 0.9;
 }
 
@@ -498,70 +505,70 @@ body.styled-scrollbars .modal-close-button {
   --pill-color-hover: var(--dark);
   --pill-color-remove: var(--dark);
   --pill-color-remove-hover: var(--dark);
-  --pill-background: #FFD166;
-  --pill-background-hover: #E6B84D;
-  --pill-border-color: #FFD166;
-  --pill-border-color-hover: #FFD166;
+  --pill-background: rgb(255, 209, 102);
+  --pill-background-hover: rgb(230, 184, 77);
+  --pill-border-color: rgb(255, 209, 102);
+  --pill-border-color-hover: rgb(255, 209, 102);
 }
 .metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(7n+2){
   --pill-color: var(--dark);
   --pill-color-hover: var(--dark);
   --pill-color-remove: var(--dark);
   --pill-color-remove-hover: var(--dark);
-  --pill-background: #FFF34D;
-  --pill-background-hover: #E6D933;
-  --pill-border-color: #FFF34D;
-  --pill-border-color-hover: #FFF34D;
+  --pill-background: rgb(255, 243, 77);
+  --pill-background-hover: rgb(230, 217, 51);
+  --pill-border-color: rgb(255, 243, 77);
+  --pill-border-color-hover: rgb(255, 243, 77);
 }
 .metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(7n+3) {
   --pill-color: var(--dark);
   --pill-color-hover: var(--dark);
   --pill-color-remove: var(--dark);
   --pill-color-remove-hover: var(--dark);
-  --pill-background: #5FFFD1;
-  --pill-background-hover: #3FD5AD;
-  --pill-border-color: #5FFFD1;
-  --pill-border-color-hover: #5FFFD1;
+  --pill-background: rgb(95, 255, 209);
+  --pill-background-hover: rgb(63, 213, 173);
+  --pill-border-color: rgb(95, 255, 209);
+  --pill-border-color-hover: rgb(95, 255, 209);
 }
 .metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(7n+4){
   --pill-color: var(--dark);
   --pill-color-hover: var(--dark);
   --pill-color-remove: var(--dark);
   --pill-color-remove-hover: var(--dark);
-  --pill-background: #9FE0FF;
-  --pill-background-hover: #81B7D0;
-  --pill-border-color: #99D5F1;
-  --pill-border-color-hover: #99D5F1;
+  --pill-background: rgb(159, 224, 255);
+  --pill-background-hover: rgb(129, 183, 208);
+  --pill-border-color: rgb(153, 213, 241);
+  --pill-border-color-hover: rgb(153, 213, 241);
 }
 .metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(7n+5){
   --pill-color: var(--dark);
   --pill-color-hover: var(--dark);
   --pill-color-remove: var(--dark);
   --pill-color-remove-hover: var(--dark);
-  --pill-background: #FFCEE2;
-  --pill-background-hover: #E8B9CC;
-  --pill-border-color: #EFC4D6;
-  --pill-border-color-hover: #EFC4D6;
+  --pill-background: rgb(255, 206, 226);
+  --pill-background-hover: rgb(232, 185, 204);
+  --pill-border-color: rgb(239, 196, 214);
+  --pill-border-color-hover: rgb(239, 196, 214);
 }
 .metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(7n+6){
   --pill-color: var(--dark);
   --pill-color-hover: var(--dark);
   --pill-color-remove: var(--dark);
   --pill-color-remove-hover: var(--dark);
-  --pill-background: #FFAA85;
-  --pill-background-hover: #E6916D;
-  --pill-border-color: #FFAA85;
-  --pill-border-color-hover: #FFAA85;
+  --pill-background: rgb(255, 170, 133);
+  --pill-background-hover: rgb(230, 145, 109);
+  --pill-border-color: rgb(255, 170, 133);
+  --pill-border-color-hover: rgb(255, 170, 133);
 }
 .metadata-property[data-property-key="tags"] .multi-select-pill:nth-child(7n+7){
   --pill-color: var(--dark);
   --pill-color-hover: var(--dark);
   --pill-color-remove: var(--dark);
   --pill-color-remove-hover: var(--dark);
-  --pill-background: #f7cdff;
-  --pill-background-hover: #e2b5e0;
-  --pill-border-color: #efc5f3;
-  --pill-border-color-hover: #efc5f3;
+  --pill-background: rgb(247, 205, 255);
+  --pill-background-hover: rgb(226, 181, 224);
+  --pill-border-color: rgb(239, 197, 243);
+  --pill-border-color-hover: rgb(239, 197, 243);
 }
 /* Changes styles for tag like elements */
 .metadata-property:not([data-property-key="tags"]) .multi-select-pill{
@@ -586,58 +593,58 @@ a.tag,
 a.tag:nth-child(7n+1),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+1),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+1){
-  --tag-background: #FFD166;
-  --tag-background-hover: #E6B84D;
-  --tag-border-color: #FFD166;
-  --tag-border-color-hover: #FFD166;
+  --tag-background: rgb(255, 209, 102);
+  --tag-background-hover: rgb(230, 184, 77);
+  --tag-border-color: rgb(255, 209, 102);
+  --tag-border-color-hover: rgb(255, 209, 102);
 }
 a.tag:nth-child(7n+2),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+2),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+2){
-  --tag-background: #FFF34D;
-  --tag-background-hover: #E6D933;
-  --tag-border-color: #FFF34D;
-  --tag-border-color-hover: #FFF34D;
+  --tag-background: rgb(255, 243, 77);
+  --tag-background-hover: rgb(230, 217, 51);
+  --tag-border-color: rgb(255, 243, 77);
+  --tag-border-color-hover: rgb(255, 243, 77);
 }
 a.tag:nth-child(7n+3),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+3),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+3){
-  --tag-background: #5FFFD1;
-  --tag-background-hover: #3FD5AD;
-  --tag-border-color: #5FFFD1;
-  --tag-border-color-hover: #5FFFD1;
+  --tag-background: rgb(97, 255, 210);
+  --tag-background-hover: rgb(63, 213, 173);
+  --tag-border-color: rgb(95, 255, 209);
+  --tag-border-color-hover: rgb(95, 255, 209);
 }
 a.tag:nth-child(7n+4),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+4),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+4){
-  --tag-background: #9FE0FF;
-  --tag-background-hover: #81B7D0;
-  --tag-border-color: #99D5F1;
-  --tag-border-color-hover: #99D5F1;
+  --tag-background: rgb(159, 224, 255);
+  --tag-background-hover: rgb(129, 183, 208);
+  --tag-border-color: rgb(153, 213, 241);
+  --tag-border-color-hover: rgb(153, 213, 241);
 }
 a.tag:nth-child(7n+5),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+5),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+5){
-  --tag-background: #FFCEE2;
-  --tag-background-hover: #E8B9CC;
-  --tag-border-color: #EFC4D6;
-  --tag-border-color-hover: #EFC4D6;
+  --tag-background: rgb(255, 206, 226);
+  --tag-background-hover: rgb(232, 185, 204);
+  --tag-border-color: rgb(239, 196, 214);
+  --tag-border-color-hover: rgb(239, 196, 214);
 }
 a.tag:nth-child(7n+6),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+6),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+6){
-  --tag-background: #FFAA85;
-  --tag-background-hover: #E6916D;
-  --tag-border-color: #FFAA85;
-  --tag-border-color-hover: #FFAA85;
+  --tag-background: rgb(255, 170, 133);
+  --tag-background-hover: rgb(230, 145, 109);
+  --tag-border-color: rgb(255, 170, 133);
+  --tag-border-color-hover: rgb(255, 170, 133);
 }
 a.tag:nth-child(7n+7),
 .cm-hashtag.cm-hashtag-begin:nth-child(7n+7),
 .cm-hashtag.cm-hashtag-end:nth-child(7n+7){
-  --tag-background: #f7cdff;
-  --tag-background-hover: #e2b5e0;
-  --tag-border-color: #efc5f3;
-  --tag-border-color-hover: #efc5f3;
+  --tag-background: rgb(247, 205, 255);
+  --tag-background-hover: rgb(226, 181, 224);
+  --tag-border-color: rgb(239, 197, 243);
+  --tag-border-color-hover: rgb(239, 197, 243);
 }
 
 select, .combobox-button, .dropdown{
@@ -706,8 +713,19 @@ body.center-all-header-reading h6 {
   text-align: center;
 }
 .mod-root .workspace-tab-header-status-icon {
-  color: #f7cdff;
+  color: rgb(247, 205, 255);
 }
+/* This part is inside mcq.css file so i have commented it */
+
+/* 
+ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
+    text-decoration: none;
+    color: var(--checklist-done-color);
+}
+.markdown-source-view.mod-cm6 .HyperMD-task-line[data-task="m"] {
+    text-decoration: none;
+    color: var(--checklist-done-color);
+} */
 
 /* ************************************************************* */
 /* ************************************************************* */
@@ -717,7 +735,7 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
 */
 
 /* updated snippet for v1.6.3  */
-/* Added my own colors here */
+/* Added my own colors */
 
 
 .nav-folder-children > .nav-folder,
@@ -769,5 +787,3 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
-
-
