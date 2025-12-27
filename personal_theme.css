@@ -284,8 +284,9 @@ button.mod-cta{
 
 .excalidraw {
   --default-button-size: 2rem !important;
-  --lg-button-size: 1.8rem !important;
-  --lg-icon-size: 2rem !important;
+  --lg-button-size: 1.5rem !important;
+  --lg-icon-size: 1.5rem !important;
+  --default-icon-size: 1.5rem !important;
 }
 .excalidraw .sidebar-trigger {
   padding: 0;
@@ -323,7 +324,14 @@ button.mod-cta{
 .excalidraw .App-mobile-menu {
   width: 20rem !important;
 }
-
+.excalidraw--tray.excalidraw .App-bottom-bar {
+  max-width: 30rem;
+}
+.excalidraw .dropdown-menu--tray {
+  left: 0;
+  row-gap: .75rem;
+  width: fit-content;
+}
 /* code block color */
 .markdown-rendered pre {
   border-left: solid;
