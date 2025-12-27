@@ -203,9 +203,6 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content
 body:not(.nav-file-indicators) .nav-file .nav-file-title[data-path*=".canvas"] .nav-file-title-content::before {
   content: '🧩';
 }
-body:not(.nav-file-indicators) .nav-file .nav-file-title:is([data-path*=".excalidraw"]) .nav-file-title-content::before {
-  content: '🖍️';
-}
 .nav-file-title, .nav-folder-title{
   margin-bottom: 6px;
 }
