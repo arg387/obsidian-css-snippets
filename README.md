@@ -7,7 +7,7 @@
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arg387.obsidian-css-snippets)
   
 
-This is my personal collection of CSS for obsidian. You can check `personal_theme.css` file if you want a default inspired minimal theme `make sure to use the personal theme with default theme if you want the best result `. Some of these CSS are written by me and others are collected from different sources. Screenshots are given below. If you have any suggestion make sure to add that in issues section. 
+This is my personal collection of CSS for obsidian. You can check `personal_theme.css` file if you want a default inspired minimal theme `make sure to use the personal theme with default theme if you want the best result `. Some of these CSS are written by me and others are collected from different sources. Screenshots are given below. If you have any suggestion make sure to add that in issues section. `This is compatible with only dark mode`.
 
 ## Pictures
 - Personal Theme
