@@ -36,6 +36,8 @@ body{
   --link-color:rgb(140, 170, 238);
   --link-decoration: none;
   --link-color-hover:rgb(140, 170, 238);
+  --list-bullet-radius: 30%;
+  --list-bullet-size: 0.6em;
   --link-decoration-hover: underline;
   --nav-item-color-hover: var(--dark);
   --nav-item-background-hover: var(--light);
@@ -792,3 +794,4 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
+
