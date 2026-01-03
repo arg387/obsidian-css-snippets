@@ -45,11 +45,12 @@ h2, .cm-header-2, body.doc-title-h2 .inline-title {
 	display: none;
 }
 .Clock__time-container {
-	margin-bottom: 0.2em;
+	margin: 0.4em;
 }
+
 .Clock_Face{
   background-color: #362424;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Merienda', cursive, sans-serif;
 }
 .Clock__time {
   color: #ffc9c9;
@@ -238,4 +239,5 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11681
     font-family: 'Comic Sans MS';
 
 } 
+
 
