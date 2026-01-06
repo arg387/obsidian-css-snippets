@@ -1,7 +1,7 @@
 # obsidian-css-snippets
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/arg387/obsidian-css-snippets)
-<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-01/12/2026-cyan?style=flat"></a>
+<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-06/01/2026-cyan?style=flat"></a>
 
 ![GitHub watchers](https://img.shields.io/github/watchers/arg387/obsidian-css-snippets)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arg387.obsidian-css-snippets)
@@ -27,20 +27,25 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
 <img width="1919" height="1076" alt="Screenshot 2026-01-01 115313" src="https://github.com/user-attachments/assets/70790544-ffd3-4474-9382-1d291fa2c81c" />
 
 
+
+
 <br>
+<img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/3996e69d-1096-4685-9325-43e1a334488b" />
+<img width="1248" height="1027" alt="Screenshot 2026-01-06 172703" src="https://github.com/user-attachments/assets/86f5dc77-d04d-42bd-93d4-822a6eec8cb0" />
+
+
+Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure].
+There is two header adjustment settings in style settings plugin which make headers centered and some other settings about table styles. If anyone want to use them install style settings plugin from obsidian community plugin store and toggle the settings there.
+ 
+
+<br>
+<hr/>
 
 - other CSS files
 <img width="1919" height="1073" alt="Screenshot 2025-10-17 123519" src="https://github.com/user-attachments/assets/dbb5fd0a-6dc2-4a83-8970-b5ea160d96db" />
 <img width="1867" height="1005" alt="Screenshot 2025-10-17 123229" src="https://github.com/user-attachments/assets/37bb1bb6-3487-4c01-9b3a-7740a0c0bb7f" />
 <img width="1919" height="1079" alt="Screenshot 2026-01-01 113423" src="https://github.com/user-attachments/assets/6f931ec0-2217-47ab-a698-f145b56013d8" />
 
-
 <br>
-<img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/3996e69d-1096-4685-9325-43e1a334488b" />
-<img width="1538" height="1050" alt="image" src="https://github.com/user-attachments/assets/4ea8acf3-58b7-4a1d-9592-c2bd3fc22278" />
-
-There is two header adjustment settings in style settings plugin which make headers centered. If anyone want to disable them install style settings plugin and toggle the settings there.
- 
-
-
+<hr/>
 BTW, if anyone is interested in doccumenting all these css styles feel free to fork the repo and add these doccumentation. It will be really a big help.
