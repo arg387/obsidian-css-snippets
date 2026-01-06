@@ -36,9 +36,9 @@ body{
   --link-color:rgb(140, 170, 238);
   --link-decoration: none;
   --link-color-hover:rgb(140, 170, 238);
+  --link-decoration-hover: underline;
   --list-bullet-radius: 30%;
   --list-bullet-size: 0.6em;
-  --link-decoration-hover: underline;
   --nav-item-color-hover: var(--dark);
   --nav-item-background-hover: var(--light);
   --nav-item-weight-hover: var(--font-weight-600);
@@ -150,7 +150,7 @@ body.is-focused .titlebar, body.is-focused .workspace-ribbon.mod-left {
   background: var(--dark-2);
 }
 .nav-files-container {
-  font-family: 'Comic Sans MS';
+  font-family: var(--other-font-family);
   background: var(--dark);
 }
 .nav-header {
@@ -692,9 +692,22 @@ b, strong {
 }
 
 /* @settings
-name: Header Styling
-id: header-styling
+name: CSS Styling
+id: css-styling
+
 settings:
+	- id: instructions
+		title: Instructions for everyone
+		type: heading
+		level: 2
+		collapsed: true
+		description: Download Style Settings Plugin from obsidian community plugin store to see these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here.
+  - id: Header
+		title: Header Settings
+    description: Settings related to header alignment
+		type: heading
+		level: 2
+		collapsed: true
   - id: center-all-header-reading
     title: Center all headers in note reading mode
     description: Toggle to enable or disable centering the headers of markdown notes in reading mode.
@@ -705,6 +718,49 @@ settings:
     description: Toggle to enable or disable centering the headers of markdown notes in editing mode.
     type: class-toggle
     default: false
+  - id: table-styling
+    title: Table Settings
+    description: Settings related to table styling
+    type: heading
+    level: 2 
+    collapsed: true
+  - id: table-top-row-background
+		title: table top row background color
+		description: Background color for the top row of tables.
+		type: variable-color
+		format: hex
+		default: '#000000'
+  - id: table-first-column-background
+		title: table first column background color
+		description: Background color for the first column of tables.
+		type: variable-color
+		format: hex
+		default: '#000000'
+  - id: text-font-top-row
+    title: Text font for top row of tables
+    description: Font used for the text in the top row of tables.
+    type: variable-text
+    default: Merienda, cursive
+  - id: text-font-first-column
+    title: Text font for first column of tables
+    description: Font used for the text in the first column of tables.
+    type: variable-text
+    default: Merienda, cursive  
+  - id: text-top-row-color
+    title: Text color for top row of tables
+    description: Color of the text in the top row of tables.
+    type: variable-color
+    format: hex
+    default: '#ffffff'
+  - id: text-first-column-color
+    title: Text color for first column of tables
+    description: Color of the text in the first column of tables.
+    type: variable-color
+    format: hex
+    default: '#ffffff'
+*/
+
+  
 */
 /* for editor mode */
 body.center-all-header-editing [dir='ltr'] {
@@ -721,6 +777,30 @@ body.center-all-header-reading h6 {
 }
 .mod-root .workspace-tab-header-status-icon {
   color: rgb(247, 205, 255);
+}
+/* table styles */
+.cm-html-embed tbody tr > td:first-child, .markdown-rendered tbody tr > td:first-child {
+  border-left-width: var(--table-column-first-border-width);
+  background: var(--table-first-column-background);
+  font-family: var(--text-font-first-column);
+  color: var(--text-first-column-color);
+}
+.cm-html-embed thead tr > th:first-child, .markdown-rendered thead tr  {
+  background: var(--table-top-row-background);
+  border-left-width: var(--table-column-first-border-width);
+  font-family: var(--text-font-top-row);
+}
+.cm-html-embed thead tr > th, .markdown-rendered thead tr > th{
+  color: var(--text-top-row-color);
+}
+.cm-html-embed th, .markdown-rendered th{
+  font-weight: var(--font-weight-800);
+}
+ 
+@media (hover: hover) {
+  .cm-html-embed thead tr:hover, .markdown-rendered thead tr:hover {
+    background-color: var(--table-top-row-background);
+  }
 }
 /* This part is inside mcq.css file so i have commented it */
 
@@ -794,4 +874,3 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
-
