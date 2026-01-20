@@ -1,0 +1,61 @@
+/* Excalidraw css styles updated with latest Excalidraw plugin version 2.19.2.  This is fully my own customization so make sure to suggest me any features you want me to add. */ /* This will work with any dark or light theme unless there is a change in excalidraw styles in the theme.*/
+
+
+.excalidraw {
+  --default-button-size: 2rem !important;
+  --lg-button-size: 2rem !important;
+  --lg-icon-size: 1.5rem !important;
+  --default-icon-size: 1.5rem !important;
+}
+.excalidraw .sidebar-trigger {
+  padding: 0;
+}
+.mobile-misc-tools-container{
+  padding: 0.8rem;
+  gap: 1rem;
+}
+.excalidraw .dropdown-menu .dropdown-menu-item-base {
+  box-sizing: border-box;
+  color: var(--color-on-surface);
+  column-gap: .625rem;
+  display: flex;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-600);
+  width: 100%;
+}
+.excalidraw [data-testid="canvas-background-label"] {
+  font-size: 1.4rem !important;
+  text-align: center;
+}
+.excalidraw .dropdown-menu .dropdown-menu-item svg {
+  width: 2rem;
+  height: 2rem;
+
+}
+.excalidraw .selected-shape-actions .control-label, .excalidraw .selected-shape-actions h3, .excalidraw .selected-shape-actions legend {
+  color: var(--text-primary-color);
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 .25rem;
+}
+.excalidraw .App-mobile-menu {
+  width: 20rem !important;
+}
+.excalidraw--tray.excalidraw .App-bottom-bar {
+  max-width: 30rem;
+}
+.excalidraw .dropdown-menu--tray {
+  left: 0;
+  row-gap: .75rem;
+  width: fit-content;
+}
+.excalidraw .library-menu-items-container__search {
+  margin-left: 1px;
+  flex: 1 1 auto;
+}
+.excalidraw .color-picker__heading {
+  font-size: 1.2rem;
+  text-align: left;
+}
