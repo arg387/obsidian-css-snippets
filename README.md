@@ -1,7 +1,7 @@
 # obsidian-css-snippets
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/arg387/obsidian-css-snippets)
-<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-16/01/2026-cyan?style=flat"></a>
+<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-20/01/2026-cyan?style=flat"></a>
 
 ![GitHub watchers](https://img.shields.io/github/watchers/arg387/obsidian-css-snippets)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arg387.obsidian-css-snippets)
@@ -31,7 +31,8 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
 
 <br>
 <img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/3996e69d-1096-4685-9325-43e1a334488b" />
-<img width="1248" height="1027" alt="Screenshot 2026-01-06 172703" src="https://github.com/user-attachments/assets/86f5dc77-d04d-42bd-93d4-822a6eec8cb0" />
+<img width="1901" height="986" alt="Screenshot 2026-01-20 114847" src="https://github.com/user-attachments/assets/8ee69db0-d0f8-4a58-9075-4364e339124f" />
+
 
 
 Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure].
