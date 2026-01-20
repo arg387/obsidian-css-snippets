@@ -24,13 +24,15 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
 
 ![obsidian-file-tree-icons](https://github.com/user-attachments/assets/6bac022d-5cc0-4b09-b9d5-978601d69003)
 
-<img width="1919" height="1076" alt="Screenshot 2026-01-01 115313" src="https://github.com/user-attachments/assets/70790544-ffd3-4474-9382-1d291fa2c81c" />
+
+
+<img width="1903" height="1067" alt="Screenshot 2026-01-20 130301" src="https://github.com/user-attachments/assets/8d8d2c6c-f5fc-4dba-90c1-36d283e27ecf" />
 
 
 
 
 <br>
-<img width="1919" height="1075" alt="image" src="https://github.com/user-attachments/assets/3996e69d-1096-4685-9325-43e1a334488b" />
+
 <img width="1901" height="986" alt="Screenshot 2026-01-20 114847" src="https://github.com/user-attachments/assets/8ee69db0-d0f8-4a58-9075-4364e339124f" />
 
 
