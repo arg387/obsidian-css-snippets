@@ -281,59 +281,7 @@ button.mod-cta{
         background-color: #3f3f3f;
     }
 }
-/* Excalidraw css styles */
 
-
-.excalidraw {
-  --default-button-size: 2rem !important;
-  --lg-button-size: 1.5rem !important;
-  --lg-icon-size: 1.5rem !important;
-  --default-icon-size: 1.5rem !important;
-}
-.excalidraw .sidebar-trigger {
-  padding: 0;
-}
-.mobile-misc-tools-container{
-  padding: 0.8rem;
-  gap: 1rem;
-}
-.excalidraw .dropdown-menu .dropdown-menu-item-base {
-  box-sizing: border-box;
-  color: var(--color-on-surface);
-  column-gap: .625rem;
-  display: flex;
-  font-family: inherit;
-  font-size: 1.2rem;
-  font-weight: var(--font-weight-600);
-  width: 100%;
-}
-.excalidraw [data-testid="canvas-background-label"] {
-  font-size: 1.4rem !important;
-  margin-bottom: 0.5rem !important;
-}
-.excalidraw .dropdown-menu .dropdown-menu-item svg {
-  width: 2rem;
-  height: 2rem;
-
-}
-.excalidraw .selected-shape-actions .control-label, .excalidraw .selected-shape-actions h3, .excalidraw .selected-shape-actions legend {
-  color: var(--text-primary-color);
-  display: block;
-  font-size: 1.2rem;
-  font-weight: 400;
-  margin: 0 0 .25rem;
-}
-.excalidraw .App-mobile-menu {
-  width: 20rem !important;
-}
-.excalidraw--tray.excalidraw .App-bottom-bar {
-  max-width: 30rem;
-}
-.excalidraw .dropdown-menu--tray {
-  left: 0;
-  row-gap: .75rem;
-  width: fit-content;
-}
 /* code block color */
 .markdown-rendered pre {
   border-left: solid;
@@ -701,7 +649,7 @@ settings:
 		type: heading
 		level: 2
 		collapsed: true
-		description: Download Style Settings Plugin from obsidian community plugin store to see these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 2026-06-15 (UTC+5:30) by @arg387...
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 2026-06-15 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
     description: Settings related to header alignment
@@ -813,7 +761,67 @@ ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
     text-decoration: none;
     color: var(--checklist-done-color);
 } */
+/* Excalidraw css styles updated with latest Excalidraw plugin version 2.19.2. I have migrated it to Excalidraw.css file so if you want to use it separately check it out. I will also update it here until i am using it for my works. This is fully my own customization so make sure to suggest me any features you want me to add.*/
 
+
+.excalidraw {
+  --default-button-size: 2rem !important;
+  --lg-button-size: 2rem !important;
+  --lg-icon-size: 1.5rem !important;
+  --default-icon-size: 1.5rem !important;
+}
+.excalidraw .sidebar-trigger {
+  padding: 0;
+}
+.mobile-misc-tools-container{
+  padding: 0.8rem;
+  gap: 1rem;
+}
+.excalidraw .dropdown-menu .dropdown-menu-item-base {
+  box-sizing: border-box;
+  color: var(--color-on-surface);
+  column-gap: .625rem;
+  display: flex;
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: var(--font-weight-600);
+  width: 100%;
+}
+.excalidraw [data-testid="canvas-background-label"] {
+  font-size: 1.4rem !important;
+  text-align: center;
+}
+.excalidraw .dropdown-menu .dropdown-menu-item svg {
+  width: 2rem;
+  height: 2rem;
+
+}
+.excalidraw .selected-shape-actions .control-label, .excalidraw .selected-shape-actions h3, .excalidraw .selected-shape-actions legend {
+  color: var(--text-primary-color);
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 0 0 .25rem;
+}
+.excalidraw .App-mobile-menu {
+  width: 20rem !important;
+}
+.excalidraw--tray.excalidraw .App-bottom-bar {
+  max-width: 30rem;
+}
+.excalidraw .dropdown-menu--tray {
+  left: 0;
+  row-gap: .75rem;
+  width: fit-content;
+}
+.excalidraw .library-menu-items-container__search {
+  margin-left: 1px;
+  flex: 1 1 auto;
+}
+.excalidraw .color-picker__heading {
+  font-size: 1.2rem;
+  text-align: left;
+}
 /* ************************************************************* */
 /* ************************************************************* */
 /* for coloring file and folder titles */
@@ -874,4 +882,3 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
-
