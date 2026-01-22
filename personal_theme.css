@@ -763,7 +763,6 @@ ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
 } */
 /* Excalidraw css styles updated with latest Excalidraw plugin version 2.19.2. I have migrated it to Excalidraw.css file so if you want to use it separately check it out. I will also update it here until i am using it for my works. This is fully my own customization so make sure to suggest me any features you want me to add.*/
 
-
 .excalidraw {
   --default-button-size: 2rem !important;
   --lg-button-size: 2rem !important;
@@ -783,7 +782,7 @@ ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
   column-gap: .625rem;
   display: flex;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 17px;
   font-weight: var(--font-weight-600);
   width: 100%;
 }
@@ -821,6 +820,11 @@ ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
 .excalidraw .color-picker__heading {
   font-size: 1.2rem;
   text-align: left;
+}
+
+.excalidraw .App-toolbar__divider {
+  background-color: #ffffff;
+  width: 2px;
 }
 /* ************************************************************* */
 /* ************************************************************* */
@@ -882,3 +886,4 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
+
