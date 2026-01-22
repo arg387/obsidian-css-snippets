@@ -20,7 +20,7 @@
   column-gap: .625rem;
   display: flex;
   font-family: inherit;
-  font-size: 1.2rem;
+  font-size: 17px;
   font-weight: var(--font-weight-600);
   width: 100%;
 }
@@ -58,4 +58,9 @@
 .excalidraw .color-picker__heading {
   font-size: 1.2rem;
   text-align: left;
+}
+
+.excalidraw .App-toolbar__divider {
+  background-color: #ffffff;
+  width: 2px;
 }
