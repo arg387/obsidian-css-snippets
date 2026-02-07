@@ -19,6 +19,8 @@
   --background-lav-1: rgb(186, 187, 241);
   --red-light-1: rgb(235, 188, 186);
   --red-light-2: rgb(174, 113, 86);
+  --red-1: rgb(241, 25, 25);
+  --red-2: rgb(255, 0, 0);
 
 }
 body{
@@ -208,6 +210,7 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title[data-path*=".canvas"] .
 .nav-file-title, .nav-folder-title{
   margin-bottom: 6px;
 }
+
 /* Command palette styling */
 .prompt {
   border: solid var(--red-light-1);
@@ -315,6 +318,7 @@ button.mod-cta{
 }
 
 /* settings close button styling */
+
 .modal-close-button {
   width: 20px;
   height: fit-content;
@@ -324,26 +328,22 @@ button.mod-cta{
   padding: 0 4px;
 }
 
-body.styled-scrollbars .modal-close-button {
-  inset-inline-end: 12px;
-}
 .document-search-close-button, .modal-close-button {
   font-size: 20px;
   line-height: 20px;
-  color: #160a0a;
-  background: #ff0000;
-  border-radius: 12px;
+  background: var(--red-1);
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.document-search-close-button::before, .modal-close-button::before {
-  font-weight: 500;
-  font-feature-settings: "case";
+
+.clickable-icon:hover {
+  background-color: var(--red-2);
 }
-.document-search-close-button, .modal-close-button:hover {
-  background: rgb(188, 20, 20);
+body.styled-scrollbars .modal-close-button {
+  inset-inline-end: 16px;
   color: var(--dark);
 }
 /* Settings sidebar styling inspired by primary theme of Obsidian and sailKite */
@@ -649,7 +649,7 @@ settings:
 		type: heading
 		level: 2
 		collapsed: true
-		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 2026-06-15 (UTC+5:30) by @arg387...
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 07/02/2026 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
     description: Settings related to header alignment
@@ -763,6 +763,7 @@ ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
 } */
 /* Excalidraw css styles updated with latest Excalidraw plugin version 2.19.2. I have migrated it to Excalidraw.css file so if you want to use it separately check it out. I will also update it here until i am using it for my works. This is fully my own customization so make sure to suggest me any features you want me to add.*/
 
+
 .excalidraw {
   --default-button-size: 2rem !important;
   --lg-button-size: 2rem !important;
@@ -821,7 +822,6 @@ ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
   font-size: 1.2rem;
   text-align: left;
 }
-
 .excalidraw .App-toolbar__divider {
   background-color: #ffffff;
   width: 2px;
@@ -886,5 +886,3 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: #7CFFD5;
 }
 /* ****************************************************************** */
-
-
