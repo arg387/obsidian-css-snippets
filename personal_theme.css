@@ -15,6 +15,7 @@
   --light-1: rgb(183, 192, 228);
   --light-2: rgb(198, 208, 245);
   --dark-green: rgba(9, 30, 32, 0.847);
+  --dark-green-1: rgba(53, 85, 87, 0.925);
   --box-shadow-mn: 1px 1px 1px grey;
   --background-lav-1: rgb(186, 187, 241);
   --red-light-1: rgb(235, 188, 186);
@@ -47,6 +48,7 @@ body{
   --pill-color-remove-hover: var(--light-1);
   --pill-color-remove: var(--light);
   --background-side-dark-green: var(--dark-green);
+  --background-side-dark-green-1: var(--dark-green-1);
   --metadata-property-radius: 32px;
   --metadata-property-radius-hover: 32px;
   --metadata-property-radius-focus: 32px;
@@ -245,7 +247,7 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title[data-path*=".canvas"] .
 }
 
 .search-input-clear-button:after {
-    background-color: rgb(228, 29, 29);
+  background-color: rgb(228, 29, 29);
 }
 
 /* plugin panel styling */
@@ -325,7 +327,7 @@ button.mod-cta{
   transition: opacity 0.15s ease-in-out;
   position: absolute;
   top: 6px;
-  padding: 0 4px;
+  padding: 0 2px;
 }
 
 .document-search-close-button, .modal-close-button {
@@ -339,8 +341,13 @@ button.mod-cta{
   cursor: pointer;
 }
 
-.clickable-icon:hover {
-  background-color: var(--red-2);
+.document-search-close-button, .modal-close-button:hover{
+  background: var(--red-2);
+}
+.document-search-close-button, .modal-close-button svg{
+  stroke-width: 3px;
+  height: 17px;
+  width: 17px;
 }
 body.styled-scrollbars .modal-close-button {
   inset-inline-end: 16px;
@@ -348,7 +355,7 @@ body.styled-scrollbars .modal-close-button {
 }
 /* Settings sidebar styling inspired by primary theme of Obsidian and sailKite */
 .modal .vertical-tab-nav-item.is-active:not(body.is-phone .vertical-tab-nav-item){
-  background: var(--background-side-dark-green);
+  background: var(--background-side-dark-green-1);
 }
 .modal .vertical-tab-nav-item.is-active:nth-child(11n+1):not(body.is-phone .vertical-tab-nav-item) {
   color: rgb(203, 166, 247);
@@ -649,7 +656,7 @@ settings:
 		type: heading
 		level: 2
 		collapsed: true
-		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 07/02/2026 (UTC+5:30) by @arg387...
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 09/02/2026 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
     description: Settings related to header alignment
