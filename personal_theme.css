@@ -104,12 +104,15 @@ input[type=checkbox] {
       border-color: var(--checkbox-color-hover-border);
   }
 }
-/* Search page background */
+/* Search page background and other stuff */
 .workspace-leaf-content {
   background: var(--dark);
 }
 .suggestion-container.mod-search-suggestion .suggestion {
   background-color: rgb(1, 1, 1);
+}
+.search-result:not(.is-collapsed) .search-result-file-title {
+    color: rgb(198 208 245);
 }
 /*******/
 
@@ -327,7 +330,7 @@ button.mod-cta{
   transition: opacity 0.15s ease-in-out;
   position: absolute;
   top: 6px;
-  padding: 0 2px;
+  padding: 0 4px;
 }
 
 .document-search-close-button, .modal-close-button {
@@ -346,8 +349,8 @@ button.mod-cta{
 }
 .document-search-close-button, .modal-close-button svg{
   stroke-width: 3px;
-  height: 17px;
-  width: 17px;
+  height: 18px;
+  width: 18px;
 }
 body.styled-scrollbars .modal-close-button {
   inset-inline-end: 16px;
@@ -656,7 +659,7 @@ settings:
 		type: heading
 		level: 2
 		collapsed: true
-		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 09/02/2026 (UTC+5:30) by @arg387...
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 10/02/2026 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
     description: Settings related to header alignment
