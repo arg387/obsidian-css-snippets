@@ -1,7 +1,7 @@
 # obsidian-css-snippets
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/arg387/obsidian-css-snippets)
-<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-20/01/2026-cyan?style=flat"></a>
+<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-21/03/2026-cyan?style=flat"></a>
 
 ![GitHub watchers](https://img.shields.io/github/watchers/arg387/obsidian-css-snippets)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arg387.obsidian-css-snippets)
@@ -34,11 +34,13 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
 <br>
 
 <img width="1901" height="986" alt="Screenshot 2026-01-20 114847" src="https://github.com/user-attachments/assets/8ee69db0-d0f8-4a58-9075-4364e339124f" />
+<img width="1827" height="1017" alt="image" src="https://github.com/user-attachments/assets/eb46f92b-9177-4a13-8408-e7f3b955105a" />
 
+<br>
 
 
 Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure].
-There is two header adjustment settings in style settings plugin which make headers centered and some other settings about table styles. If anyone want to use them install style settings plugin from obsidian community plugin store and toggle the settings there.
+There is two header adjustment settings in style settings plugin which make headers centered and some other settings about table styles. Now you can even adjust the color of toolbar and titlebar so that you can use it to differentiate indivisual vault. If anyone want to use them install style settings plugin from obsidian community plugin store and toggle the settings there.
  
 
 <br>
