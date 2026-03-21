@@ -47,7 +47,6 @@ body{
   --nav-item-weight-hover: var(--font-weight-600);
   --pill-color-remove-hover: var(--light-1);
   --pill-color-remove: var(--light);
-  --background-side-dark-green: var(--dark-green);
   --background-side-dark-green-1: var(--dark-green-1);
   --metadata-property-radius: 32px;
   --metadata-property-radius-hover: 32px;
@@ -66,6 +65,7 @@ body{
   --checkbox-color: var(--red-light-1);
   --link-external-color: rgb(186, 224, 235);
   --checklist-done-color: rgb(79, 220, 138);
+  --titlebarandribbonbar-background-color: var(--dark-green);
 }
 .theme-dark{
   --interactive-normal: var(--dark-3);
@@ -128,13 +128,8 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   padding: var(--size-4-2) var(--size-4-2);
   order: 1;
 }
-body.is-focused .titlebar, body.is-focused .workspace-ribbon.mod-left {
-  --titlebar-background: var(--background-side-dark-green);
-}
-.workspace-ribbon.mod-left {
-  margin-top: var(--header-height);
-  background: var(--background-side-dark-green);
-}
+
+
 .bases-thead .bases-table-header {
   display: flex;
   width: 100%;
@@ -164,9 +159,7 @@ body.is-focused .titlebar, body.is-focused .workspace-ribbon.mod-left {
   padding: var(--size-4-2);
   background: var(--dark);
 }
-div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
-  background: var(--background-side-dark-green);
-}
+
 /* for adding file and folder icons beside file names*/
 
 
@@ -657,9 +650,9 @@ settings:
 	- id: instructions
 		title: Instructions for everyone
 		type: heading
-		level: 2
-		collapsed: true
-		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 10/02/2026 (UTC+5:30) by @arg387...
+    level: 1
+		collapsed: false
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 21/03/2026 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
     description: Settings related to header alignment
@@ -716,6 +709,18 @@ settings:
     type: variable-color
     format: hex
     default: '#ffffff'
+  - id: ribbon and titlebar color styling
+    title: sidebar ribbon and titlebar color styling
+    description: Settings related to sidebar ribbon and titlebar styling
+    type: heading
+    level: 2 
+    collapsed: true
+  - id: titlebarandribbonbar-background-color
+    title: Titlebar background color 
+    description: Set the background color for the titlebar and sidebar ribbon.
+    type: variable-color
+    format: hex
+    default: '#091e20d8'
 */
 
   
@@ -760,6 +765,18 @@ body.center-all-header-reading h6 {
     background-color: var(--table-top-row-background);
   }
 }
+/* sidebar color and top bar color changing part */
+body.is-focused .titlebar, body.is-focused .workspace-ribbon.mod-left {
+  --titlebar-background: var(--titlebarandribbonbar-background-color);
+}
+.workspace-ribbon.mod-left {
+  margin-top: var(--header-height);
+  background: var(--titlebarandribbonbar-background-color);
+}
+div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
+  background: var(--titlebarandribbonbar-background-color);
+}
+
 /* This part is inside mcq.css file so i have commented it */
 
 /* 
@@ -836,6 +853,7 @@ ul > li.task-list-item[data-task="m"], ul > li.task-list-item[data-task="m"] {
   background-color: #ffffff;
   width: 2px;
 }
+
 /* ************************************************************* */
 /* ************************************************************* */
 /* for coloring file and folder titles */
