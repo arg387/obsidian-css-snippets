@@ -246,7 +246,10 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title[data-path*=".canvas"] .
 .search-input-clear-button:after {
   background-color: rgb(228, 29, 29);
 }
+.search-suggest-item.mod-group:hover, .search-suggest-item.mod-group.is-selected {
 
+  border: #363636;
+}
 /* plugin panel styling */
 .modal.mod-sidebar-layout {
   opacity: 0.9;
@@ -640,7 +643,7 @@ select, .combobox-button, .dropdown{
 }
 /* hide metadata divider for sidebar at the right side of the workspace */
 .workspace > .workspace-split:not(.mod-root) .metadata-container {
-    --metadata-divider-width: 0;
+  --metadata-divider-width: 0;
 }
 /* bold text color */
 b, strong {
