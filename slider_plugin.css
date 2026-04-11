@@ -1,0 +1,4 @@
+/* hide next button in image slider plugin. It doesn't look good so i removed it. */
+.next{
+  background-image: unset;
+}
