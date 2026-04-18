@@ -650,7 +650,18 @@ b, strong {
   font-weight: var(--font-weight-800);
   color: var(--light-2);
 }
-
+/* cursor color during file name edit */
+.tree-item-self.is-being-renamed [contenteditable="true"], .tree-item-self.is-being-renamed .tree-item-inner {
+  cursor: text;
+  flex-grow: 1;
+  caret-color: auto;
+}
+/* background of folders being renamed */
+.tree-item-self.is-being-renamed:focus-within {
+  color: var(--nav-item-color-active);
+  box-shadow: 0 0 0 2px var(--interactive-accent);
+  background: rgb(250, 235, 215);
+}
 /* @settings
 name: CSS Styling
 id: css-styling
