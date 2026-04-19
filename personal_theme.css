@@ -662,6 +662,10 @@ b, strong {
   box-shadow: 0 0 0 2px var(--interactive-accent);
   background: rgb(250, 235, 215);
 }
+.suggestion-highlight:hover {
+  text-decoration: none;
+  color: rgb(0 0 0);
+}
 /* @settings
 name: CSS Styling
 id: css-styling
