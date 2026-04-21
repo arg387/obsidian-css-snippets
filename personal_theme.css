@@ -175,7 +175,7 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   font-weight: bold;
 }
 .tree-item-self .tree-item-icon{
-  font-size: 1.2em;
+  font-size: 1em;
   margin-right: 0.2em;
 }
 body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content::before {
