@@ -221,6 +221,9 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content
   width: 20px;
   height: 20px;
 }
+.nav-file .nav-file-title .nav-file-title-content{
+  font-size: 14px;
+}
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".svg"], [data-path$=".bmp"], [data-path$=".jpeg"], [data-path$=".jpg"], [data-path$=".png"], [data-path$=".gif"])>.nav-file-title-content::before{
   content: "🖼️";
 }
