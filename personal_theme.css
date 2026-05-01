@@ -160,8 +160,6 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
   padding: var(--size-4-2) var(--size-4-2);
   order: 1;
 }
-
-
 .bases-thead .bases-table-header {
   background: var(--dark-2);
 }
@@ -200,10 +198,15 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .nav-folder-title {
   font-weight: bold;
+  font-size: 14px;
 }
 .tree-item-self .tree-item-icon{
-  font-size: 1em;
-  margin-right: 0.2em;
+  font-size: 1.2em;
+  margin-right: 0.6em !important;
+}
+.nav-file-title-content,
+.nav-folder-title-content {
+  margin-top: 0.2em;
 }
 body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content::before {
   -webkit-mask-repeat: no-repeat;
@@ -473,9 +476,11 @@ body.styled-scrollbars .modal-close-button {
 /* for markdown */
 .markdown-preview-view{
   font-family: var(--markdown-font-family);
+  font-size: 18px;
 }
 .markdown-source-view.mod-cm6 .cm-scroller {
   font-family: var(--markdown-font-family);
+  font-size: 18px;
 }
 .clickable-icon[aria-disabled='true'] {
   color: rgb(234, 234, 234);
