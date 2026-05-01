@@ -1,5 +1,6 @@
 /* My edits for dark theme  */
   /* This theme does not work well for light theme. */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 *{
   --dark: rgb(0, 0, 0);
   --dark-1:rgb(15, 15, 15);
