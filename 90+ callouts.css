@@ -506,6 +506,11 @@ body {
 	--callout-color: var(--new-callout-apple); 
 	--callout-icon: lucide-moon-star;
 }
+/* For information callout */
+.callout[data-callout="information"] {
+	--callout-color: var(--new-callout-blue); 
+	--callout-icon: lucide-badge-info;
+}
 /* for photo gallery */
 .callout[data-callout="gallery"],
 .callout[data-callout="photos"] {
@@ -1313,17 +1318,3 @@ body {
 	border: 1px solid;
 	border-color: var(--text-faint);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
