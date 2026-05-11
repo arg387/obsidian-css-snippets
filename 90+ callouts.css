@@ -798,17 +798,26 @@ body {
 }
 
 
-/*### AI, ARTIFICIAL INTELLIGENCE, SPARKLE, SPARKLES ###*/
+/*### SPARKLE, SPARKLES ###*/
 
-.callout[data-callout="ai"],
-.callout[data-callout="artificial-intelligence"],
 .callout[data-callout="sparkle"],
 .callout[data-callout="sparkles"] {
 	--callout-color: var(--new-callout-yellow); 
 	--callout-icon: wand-2;
 }
+/* Error */
+.callout[data-callout="error"] {
+	--callout-color: var(--new-callout-red); 
+	--callout-icon: lucide-circle-x;
+}
 
+/* ### AI, ARTIFICIAL INTELLIGENCE ### */
 
+.callout[data-callout="ai"],
+.callout[data-callout="artificial-intelligence"]{
+	--callout-color: var(--new-callout-magenta); 
+	--callout-icon: brain-circuit;
+}
 /*### LOCK, PRIVATE, PRIVACY ###*/
 
 .callout[data-callout="lock"],
@@ -1318,3 +1327,4 @@ body {
 	border: 1px solid;
 	border-color: var(--text-faint);
 }
+
