@@ -88,6 +88,10 @@ body{
   padding-right: var(--size-4-2);
   position: relative;
 }
+.workspace .mod-root .workspace-tab-header-inner-title {
+  text-align: center;
+}
+
 /* Colorful active tabs */
 .workspace .mod-root .workspace-tab-header:nth-child(10n+1){
   border: 1px dotted rgb(255, 99, 132);
