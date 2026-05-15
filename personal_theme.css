@@ -1,3 +1,31 @@
+/*
+
+Copyright (c) 2026 Argha Saha
+
+Licensed under the Apache License, Version 2.0.
+
+Permission is granted to any person to use, copy, modify,
+distribute, sublicense, and sell this code and its
+derivative works for any purpose, including commercial use, 
+provided that the following conditions are met:
+
+Conditions:
+1. Proper credit to the original author (Argha Saha)
+   must be included in all copies and derivative works.
+2. A copy of this license notice must be included with
+   all distributions of the software.
+3. Modified versions must clearly state that changes
+   were made.
+4. This license includes an express grant of patent rights
+   from contributors to users of the software.
+5. This license does not grant permission to use the
+   author's trademarks, branding, or names for promotion
+   without permission.
+
+This software is provided "AS IS", without warranty of any kind.
+In no event shall the author or copyright holder be liable for any claim, damages, or other liability.
+*/
+
 /* My edits for dark theme  */
   /* This theme does not work well for light theme. */
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
