@@ -1,3 +1,7 @@
+/* using this for marking mcq with different color
+Usage example:(copy the line below and paste it in any markdown for testing)
+- [m] option 
+*/
 body{
   --checklist-done-color: rgb(79, 220, 138);
 }
