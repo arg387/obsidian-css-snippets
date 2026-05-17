@@ -1,5 +1,4 @@
-/* Excalidraw css styles updated with latest Excalidraw plugin version 2.19.2.  This is fully my own customization so make sure to suggest me any features you want me to add. */ /* This will work with any dark or light theme unless there is a change in excalidraw styles in the theme.*/
-
+/* Excalidraw css styles updated with latest Excalidraw plugin version 2.22.3 .  This is fully my own customization so make sure to suggest me any features you want me to add. */ /* This will work with any dark or light theme unless there is a change in excalidraw styles in the theme.*/
 
 .excalidraw {
   --default-button-size: 2rem !important;
@@ -59,7 +58,6 @@
   font-size: 1.2rem;
   text-align: left;
 }
-
 .excalidraw .App-toolbar__divider {
   background-color: #ffffff;
   width: 2px;
