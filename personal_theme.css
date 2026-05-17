@@ -884,6 +884,40 @@ div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
 div.sidebar-toggle-button.mod-left .clickable-icon {
   color: var(--titlebarandribbon-font-color);
 }
+/* file Indentation coloring */
+.tree-item:nth-child(11n+2) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgba(255, 243, 77, 0.578);
+}
+.tree-item:nth-child(11n+3) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgba(255, 178, 71, 0.578);
+}
+.tree-item:nth-child(11n+4) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgb(255, 77, 166, 0.578);
+}
+.tree-item:nth-child(11n+5) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgb(111, 231, 255, 0.578);
+}
+.tree-item:nth-child(11n+6) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgb(164, 255, 77, 0.578);
+}
+.tree-item:nth-child(11n+7) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgba(255, 46, 98, 0.578);
+}
+.tree-item:nth-child(11n+8) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgb(157, 77, 255, 0.578);
+}
+.tree-item:nth-child(11n+9) > .tree-item-children{
+  border-inline-start: var(--nav-indentation-guide-width) solid rgb(255, 201, 77, 0.578);
+}
+.tree-item:nth-child(11n+10) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgb(77, 255, 214, 0.578);
+}
+.tree-item:nth-child(11n+11) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgb(102, 179, 255, 0.578);
+}
+.tree-item:nth-child(11n+12) > .tree-item-children {
+  border-inline-start: var(--nav-indentation-guide-width) solid rgb(124, 255, 213, 0.578);
+}
 /* This part is inside mcq.css file so i have commented it */
 
 /* 
@@ -971,11 +1005,6 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
 /* updated snippet for v1.6.3  */
 /* Added my own colors */
 
-
-.nav-folder-children > .nav-folder,
-.nav-files-container > div > .nav-folder:hover {
-  filter: brightness(0.9);
-}
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 2) {
   --nav-item-color: #FFF34D;
