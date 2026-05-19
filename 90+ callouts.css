@@ -21,6 +21,7 @@
 	--new-silver: 200, 200, 200;
 	--new-gold: 255, 215, 0;
 	--new-call1: 3, 252, 119;
+	--new-mauve-1: 202, 158, 230;
 }
 
 
@@ -43,6 +44,7 @@ body {
 	--new-callout-silver: var(--new-silver);
 	--new-callout-gold: var(--new-gold);
 	--new-callout-c1: var(--new-call1);
+	--new-callout-mauve: var(new-mauve-1)
 }
 
 
@@ -508,7 +510,7 @@ body {
 }
 /* For information callout */
 .callout[data-callout="information"] {
-	--callout-color: var(--new-callout-blue); 
+	--callout-color: var(--new-mauve-1); 
 	--callout-icon: lucide-badge-info;
 }
 /* for photo gallery */
