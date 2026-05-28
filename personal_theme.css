@@ -42,15 +42,16 @@ In no event shall the author or copyright holder be liable for any claim, damage
   --font-weight-500: 500;
   --font-weight-800: 800;
   --light-1: rgb(183, 192, 228);
-  --light-2: #c6d0f5;
+  --light-2: rgb(198, 208, 245);
   --dark-green: rgba(9, 30, 32, 0.847);
   --dark-green-1: rgba(53, 85, 87, 0.925);
-  --box-shadow-mn: 1px 1px 1px grey;
+  --box-shadow-mn: 1px 1px 1px rgb(128, 128, 128);
   --background-lav-1: rgb(186, 187, 241);
   --red-light-1: rgb(235, 188, 186);
   --red-light-2: rgb(174, 113, 86);
   --red-1: rgb(241, 25, 25);
   --red-2: rgb(255, 0, 0);
+  --peach-1: rgb(250, 179, 135);
 
 }
 body{
@@ -71,6 +72,9 @@ body{
   --link-decoration-hover: underline;
   --list-bullet-radius: 30%;
   --list-bullet-size: 0.6em;
+  --nav-tag-color: var(--dark-1);
+  --nav-tag-background: var(--peach-1);
+  --nav-tag-color-hover:var(--dark);
   --nav-item-color-hover: var(--dark);
   --nav-item-background-hover: var(--light);
   --nav-item-weight-hover: var(--font-weight-600);
@@ -465,12 +469,12 @@ body.styled-scrollbars .modal-close-button {
 
 .vertical-tab-header-group-title {
   font-size: 16px;
-  color: #a5adce;
+  color: rgb(165, 173, 206);
 }
 
 .menu-scroll {
   background: var(--dark);
-  border: #1f2a2f solid 1px;
+  border: rgb(31, 42, 47) solid 1px;
   border-radius: 12px;
   
 }
@@ -884,7 +888,7 @@ div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
 div.sidebar-toggle-button.mod-left .clickable-icon {
   color: var(--titlebarandribbon-font-color);
 }
-/* file Indentation coloring */
+/* Indentation coloring */
 .tree-item:nth-child(11n+2) > .tree-item-children {
   border-inline-start: var(--nav-indentation-guide-width) solid rgba(255, 243, 77, 0.578);
 }
@@ -918,7 +922,6 @@ div.sidebar-toggle-button.mod-left .clickable-icon {
 .tree-item:nth-child(11n+12) > .tree-item-children {
   border-inline-start: var(--nav-indentation-guide-width) solid rgb(124, 255, 213, 0.578);
 }
-
 /* ************************************************************* */
 /* ************************************************************* */
 /* for coloring file and folder titles */
@@ -931,46 +934,46 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
 
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 2) {
-  --nav-item-color: #FFF34D;
+  --nav-item-color: rgb(255, 243, 77);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 3) {
-  --nav-item-color: #FFB347;
+  --nav-item-color: rgb(255, 179, 71);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 4) {
-  --nav-item-color: #FF4DA6;
+  --nav-item-color: rgb(255, 77, 166);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 5) {
-  --nav-item-color: #6FE7FF;
+  --nav-item-color: rgb(111, 231, 255);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 6) {
-  --nav-item-color: #A4FF4D;
+  --nav-item-color: rgb(164, 255, 77);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 7) {
-  --nav-item-color: #FF2E63;
+  --nav-item-color: rgb(255, 46, 99);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 8) {
-  --nav-item-color: #9D4DFF;
+  --nav-item-color: rgb(157, 77, 255);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 9) {
-  --nav-item-color: #FFC94D;
+  --nav-item-color: rgb(255, 201, 77);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 10) {
-  --nav-item-color: #4DFFD6;
+  --nav-item-color: rgb(77, 255, 214);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 11) {
-  --nav-item-color: #66B3FF;
+  --nav-item-color: rgb(102, 179, 255);
 }
 .nav-folder-children > .nav-folder,
 .nav-files-container > div > .nav-folder:nth-child(11n + 12) {
-  --nav-item-color: #7CFFD5;
+  --nav-item-color: rgb(124, 255, 213);
 }
 /* ****************************************************************** */
