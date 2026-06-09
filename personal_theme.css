@@ -410,13 +410,16 @@ button.mod-cta{
   cursor: pointer;
 }
 
-.document-search-close-button, .modal-close-button:hover{
+.document-search-close-button:hover{
   background: var(--red-2);
 }
 .document-search-close-button, .modal-close-button svg{
   stroke-width: 3px;
   height: 18px;
   width: 18px;
+}
+.modal-close-button:hover{
+  background-color: var(--red-2);
 }
 body.styled-scrollbars .modal-close-button {
   inset-inline-end: 16px;
@@ -711,6 +714,11 @@ select, .combobox-button, .dropdown{
     background-color: var(--background-modifier-error);
     color: var(--dark);
   }
+}
+/* Tweak in findbar close button */
+.clickable-icon.document-search-close-button{
+  padding: 2px;
+  color:rgb(0, 0, 0);
 }
 /* hide metadata divider for sidebar at the right side of the workspace */
 .workspace > .workspace-split:not(.mod-root) .metadata-container {
