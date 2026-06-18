@@ -1,7 +1,7 @@
 # obsidian-css-snippets
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/arg387/obsidian-css-snippets)
-<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-21/03/2026-cyan?style=flat"></a>
+<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-18/06/2026-cyan?style=flat"></a>
 
 ![GitHub watchers](https://img.shields.io/github/watchers/arg387/obsidian-css-snippets)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arg387.obsidian-css-snippets)
@@ -12,9 +12,7 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
 ## Pictures
 - Personal Theme
 
-
-
-<img width="1882" height="1003" alt="Screenshot 2026-01-16 125403" src="https://github.com/user-attachments/assets/a7f3165e-9edf-4b09-b01e-8c7471310697" />
+<img width="1913" height="1077" alt="image" src="https://github.com/user-attachments/assets/a5280ff2-e2e5-4b00-84ee-453eb13ea36e" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/13d8a25b-0d99-4d3e-8e63-55b2863bb349" />
 <img width="1919" height="1075" alt="Screenshot 2025-09-30 085937" src="https://github.com/user-attachments/assets/1f9f5ae4-e594-42f0-9865-4316437b5625" />
 <img width="1373" height="916" alt="image" src="https://github.com/user-attachments/assets/db41bdbb-2b49-4ef9-a847-f71029744337" />
@@ -33,7 +31,7 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
 
 <br>
 
-<img width="1901" height="986" alt="Screenshot 2026-01-20 114847" src="https://github.com/user-attachments/assets/8ee69db0-d0f8-4a58-9075-4364e339124f" />
+<img width="1843" height="987" alt="image" src="https://github.com/user-attachments/assets/01e53d8e-2e03-40ba-838a-04e2edf47c85" />
 <img width="1827" height="1017" alt="image" src="https://github.com/user-attachments/assets/eb46f92b-9177-4a13-8408-e7f3b955105a" />
 
 <br>
