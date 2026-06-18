@@ -424,6 +424,7 @@ button.mod-cta{
   padding: 0 4px;
 }
 
+/* Document search close button styling */
 .document-search-close-button, .modal-close-button {
   font-size: 20px;
   line-height: 20px;
@@ -433,6 +434,9 @@ button.mod-cta{
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+.markdown-source-view >.document-search-container>.document-search>.clickable-icon.document-search-close-button{
+  margin-top: 6px;
 }
 
 .document-search-close-button:hover{
