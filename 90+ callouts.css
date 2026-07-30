@@ -3,25 +3,25 @@
 
 .theme-light,
 .theme-dark {
-	--new-blue: 80, 124, 165;
-	--new-cyan: 66, 162, 168;
-	--new-red: 211, 47, 47;
-	--new-purple: 112, 112, 202;
-	--new-magenta: 189, 94, 180;
-	--new-pink: 245, 116, 116;
-	--new-orange: 223, 119, 22;
-	--new-yellow: 211, 167, 12;
-	--new-mist: 173, 138, 16;
-	--new-green: 48, 193, 62;
-	--new-lemon: 135, 170, 79;
-	--new-apple: 79, 151, 115;
-	--new-grey: 135, 135, 135;
-	--new-tan: 113, 98, 61;
-	--newvar-pink:242, 31, 183;
-	--new-silver: 200, 200, 200;
-	--new-gold: 255, 215, 0;
-	--new-call1: 3, 252, 119;
-	--new-mauve-1: 202, 158, 230;
+	--new-blue: rgb(80, 124, 165);
+	--new-cyan: rgb(66, 162, 168);
+	--new-red: rgb(211, 47, 47);
+	--new-purple: rgb(112, 112, 202);
+	--new-magenta: rgb(189, 94, 180);
+	--new-pink: rgb(245, 116, 116);
+	--new-orange: rgb(223, 119, 22);
+	--new-yellow: rgb(211, 167, 12);
+	--new-mist: rgb(173, 138, 16);
+	--new-green: rgb(48, 193, 62);
+	--new-lemon: rgb(135, 170, 79);
+	--new-apple: rgb(79, 151, 115);
+	--new-grey: rgb(135, 135, 135);
+	--new-tan: rgb(113, 98, 61);
+	--newvar-pink:rgb(242, 31, 183);
+	--new-silver: rgb(200, 200, 200);
+	--new-gold: rgb(255, 215, 0);
+	--new-call1: rgb(3, 252, 119);
+	--new-mauve-1: rgb(202, 158, 230)
 }
 
 
@@ -44,7 +44,7 @@ body {
 	--new-callout-silver: var(--new-silver);
 	--new-callout-gold: var(--new-gold);
 	--new-callout-c1: var(--new-call1);
-	--new-callout-mauve: var(new-mauve-1)
+	--new-callout-mauve: var(--new-mauve-1)
 }
 
 
@@ -79,7 +79,7 @@ body {
 	--callout-icon: lucide-check !important;
 }
 :is([data-callout-metadata][data-callout-fold][data-callout="dashboard"].callout) {
-	--callout-color: 255, 204, 229 !important;
+	--callout-color: var(--new-callout-p) !important;
 	--callout-icon: lucide-gauge !important;
 }
 :is([data-callout-metadata][data-callout-fold].callout[data-callout="#"].callout){
@@ -91,17 +91,17 @@ body {
 	--callout-icon: lucide-book-open-text !important;
 }
 :is([data-callout-metadata][data-callout-fold][data-callout="body"].callout) {
-	--callout-color: 51, 255, 255 !important;
+	--callout-color: rgb(51, 255, 255) !important;
 	--callout-icon: lucide-activity !important;
 }
 
 :is([data-callout-metadata][data-callout-fold][data-callout="mind"].callout) {
-	--callout-color: 255, 255, 51 !important;
+	--callout-color: rgb(255, 255, 51) !important;
 	--callout-icon: lucide-brain !important;
 }
 
 :is([data-callout-metadata][data-callout-fold][data-callout="soul"].callout) {
-	--callout-color: 178, 102, 255 !important;
+	--callout-color: rgb(178, 102, 255) !important;
 	--callout-icon: lucide-brain-circuit !important;
 }
 
@@ -381,7 +381,7 @@ body {
 
 .callout[data-callout="dictionary"] {
     
-  --callout-color: 235, 116, 52;
+  --callout-color: rgb(235, 116, 52);
   --callout-icon: book-text;
 
   /* links */
