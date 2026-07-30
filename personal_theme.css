@@ -28,6 +28,8 @@ In no event shall the author or copyright holder be liable for any claim, damage
 
 /* My edits for dark theme  */
   /* This theme does not work well for light theme. */
+/* My edits for dark theme  */
+  /* This theme does not work well for light theme. */
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 *{
   --dark: rgb(0, 0, 0);
@@ -341,23 +343,17 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title[data-path*=".canvas"] .
   background-color: rgb(228, 29, 29);
 }
 .search-suggest-item.mod-group:hover, .search-suggest-item.mod-group.is-selected {
-
   border: #363636;
 }
 /* plugin panel styling */
-.modal.mod-sidebar-layout {
-  opacity: 0.9;
-}
+
 .modal-sidebar {
   --background-modifier-form-field: rgb(26, 23, 23);
   background-color: var(--dark);
 }
 
 /* Settings panel styling */
-.modal-container.mod-dim .modal {
-  box-shadow: var(--shadow-l);
-  opacity: 0.8;
-}
+
 .horizontal-tab-content, .vertical-tab-content {
   padding-inline-start: var(--size-4-12);
   padding-inline-end: var(--size-4-12);
@@ -423,7 +419,6 @@ button.mod-cta{
   top: 6px;
   padding: 0 4px;
 }
-
 /* Document search close button styling */
 .document-search-close-button, .modal-close-button {
   font-size: 20px;
@@ -438,7 +433,6 @@ button.mod-cta{
 .markdown-source-view >.document-search-container>.document-search>.clickable-icon.document-search-close-button{
   margin-top: 6px;
 }
-
 .document-search-close-button:hover{
   background: var(--red-2);
 }
@@ -784,7 +778,7 @@ settings:
 		type: heading
     level: 1
 		collapsed: false
-		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 18/06/2026 (UTC+5:30) by @arg387...
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 31/07/2026 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
     description: Settings related to header alignment
