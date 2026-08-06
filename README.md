@@ -1,7 +1,7 @@
 # obsidian-css-snippets
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/arg387/obsidian-css-snippets)
-<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-18/06/2026-cyan?style=flat"></a>
+<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-07/08/2026-cyan?style=flat"></a>
 
 ![GitHub watchers](https://img.shields.io/github/watchers/arg387/obsidian-css-snippets)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arg387.obsidian-css-snippets)
@@ -15,7 +15,7 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
 <img width="1913" height="1077" alt="image" src="https://github.com/user-attachments/assets/a5280ff2-e2e5-4b00-84ee-453eb13ea36e" />
 <img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/13d8a25b-0d99-4d3e-8e63-55b2863bb349" />
 <img width="1919" height="1075" alt="Screenshot 2025-09-30 085937" src="https://github.com/user-attachments/assets/1f9f5ae4-e594-42f0-9865-4316437b5625" />
-<img width="1373" height="916" alt="image" src="https://github.com/user-attachments/assets/db41bdbb-2b49-4ef9-a847-f71029744337" />
+
 
 <img width="1919" height="1068" alt="image" src="https://github.com/user-attachments/assets/93c3ce0d-bdf2-4f0b-9a81-f0d270b87529" />
 
@@ -30,15 +30,12 @@ This is my personal collection of CSS for obsidian. You can check `personal_them
 
 
 <br>
-
-<img width="1843" height="987" alt="image" src="https://github.com/user-attachments/assets/01e53d8e-2e03-40ba-838a-04e2edf47c85" />
-<img width="1827" height="1017" alt="image" src="https://github.com/user-attachments/assets/eb46f92b-9177-4a13-8408-e7f3b955105a" />
-
+<img width="1918" height="818" alt="2026-08-07_00-15" src="https://github.com/user-attachments/assets/d21ba618-b2b1-4845-bab3-aab6933bef1a" />
+<img width="1917" height="1047" alt="image" src="https://github.com/user-attachments/assets/b36c50ff-a080-4a6d-a979-824dc6e4733a" />
 <br>
 
-
 Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure].
-There is two header adjustment settings in style settings plugin which make headers centered and some other settings about table styles. Now you can even adjust the color of toolbar and titlebar so that you can use it to differentiate indivisual vault. If anyone want to use them install style settings plugin from obsidian community plugin store and toggle the settings there.
+There is two header adjustment settings in style settings plugin which make headers centered and some other settings about table styles and others. Now you can even adjust the color of toolbar and titlebar so that you can use it to differentiate indivisual vault. If anyone want to use them install style settings plugin from obsidian community plugin store and toggle the settings there.
  
 
 <br>
