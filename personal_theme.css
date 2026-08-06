@@ -73,8 +73,8 @@ body{
   --list-bullet-radius: 30%;
   --list-bullet-size: 0.6em;
   --nav-tag-color: var(--dark-1);
-  --nav-tag-background: var(--peach-1);
   --nav-tag-color-hover:var(--dark);
+  --nav-tag-color-active: var(--dark);
   --nav-item-color-hover: var(--dark);
   --nav-item-background-hover: var(--light);
   --nav-item-weight-hover: var(--font-weight-600);
@@ -105,6 +105,9 @@ body{
   --interactive-normal: var(--dark-3);
   --interactive-accent: var(--dark-3);
   --interactive-accent-hover: var(--dark-3);
+}
+.nav-file-tag:not(.is-active) {
+  background-color: var(--peach-1);
 }
 /* inline title styling */
 .mod-header.mod-ui>.inline-title {
@@ -1006,4 +1009,3 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: rgb(124, 255, 213);
 }
 /* ****************************************************************** */
-
