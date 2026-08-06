@@ -28,8 +28,6 @@ In no event shall the author or copyright holder be liable for any claim, damage
 
 /* My edits for dark theme  */
   /* This theme does not work well for light theme. */
-/* My edits for dark theme  */
-  /* This theme does not work well for light theme. */
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
 *{
   --dark: rgb(0, 0, 0);
@@ -806,13 +804,13 @@ settings:
 		description: Background color for the top row of tables.
 		type: variable-color
 		format: hex
-		default: '#000000'
+		default: '#9EE894'
   - id: table-first-column-background
 		title: table first column background color
 		description: Background color for the first column of tables.
 		type: variable-color
 		format: hex
-		default: '#000000'
+		default: '#9E8DDC'
   - id: text-font-top-row
     title: Text font for top row of tables
     description: Font used for the text in the top row of tables.
@@ -828,13 +826,13 @@ settings:
     description: Color of the text in the top row of tables.
     type: variable-color
     format: hex
-    default: '#ffffff'
+    default: '#000000'
   - id: text-first-column-color
     title: Text color for first column of tables
     description: Color of the text in the first column of tables.
     type: variable-color
     format: hex
-    default: '#ffffff'
+    default: '#000000'
   - id: ribbon and titlebar color styling
     title: sidebar ribbon and titlebar color styling
     description: Settings related to sidebar ribbon and titlebar styling
@@ -1008,3 +1006,4 @@ source: https://discord.com/channels/686053708261228577/702656734631821413/11630
   --nav-item-color: rgb(124, 255, 213);
 }
 /* ****************************************************************** */
+
