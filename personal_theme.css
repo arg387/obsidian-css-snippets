@@ -37,6 +37,7 @@ In no event shall the author or copyright holder be liable for any claim, damage
   --dark-3: rgb(65, 69, 89);
   --dark-5: rgb(9, 4, 4);
   --dark-6: rgb(41, 44, 60);
+  --dark-7: rgb(22, 20, 20);
   --light: rgb(255, 255, 255);
   --font-weight-600: 600;
   --font-weight-500: 500;
@@ -109,7 +110,10 @@ body{
 .nav-file-tag:not(.is-active) {
   background-color: var(--peach-1);
 }
-/* inline title styling */
+.mod-sidedock .workspace-tab-header-container {
+  background-color: var(--dark-7);
+}
+/* inline title styling for the note*/
 .mod-header.mod-ui>.inline-title {
   display: block;
   position: relative;
@@ -377,77 +381,37 @@ button.mod-cta{
         background-color: #3f3f3f;
     }
 }
-
-/* code block color */
-.markdown-rendered pre {
-  border-left: solid;
-  border: var(--code-border);
+.modal.mod-settings {
+  background-color: var(--settings-background);
+  --setting-group-center-offset: calc((100% - var(--setting-group-max-width)) / 2);
+  opacity: 0.9;
 }
-
-.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
-  border-left: solid;
-}
-/* live preview */
-.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
-  background: var(--code-background);
-  border-top: var(--code-border);
-  /* stylelint-disable-next-line declaration-no-important */
-  border-top-right-radius: 8px !important;
-  /* stylelint-disable-next-line declaration-no-important */
-  border-top-left-radius: 8px !important;
-  margin-top: 8px;
-}
-
-.cm-s-obsidian div.HyperMD-codeblock-end-bg {
-  background: var(--code-background);
-  border-bottom: var(--code-border);
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px;
-}
-
-.cm-s-obsidian div.HyperMD-codeblock-bg {
-  border-right: var(--code-border);
-  border-left: var(--code-border);
-}
-
 /* settings close button styling */
 
-.modal-close-button {
-  width: 20px;
-  height: fit-content;
-  transition: opacity 0.15s ease-in-out;
+.modal-header-button, .modal-close-button {
   position: absolute;
-  top: 6px;
-  padding: 0 4px;
-}
-/* Document search close button styling */
-.document-search-close-button, .modal-close-button {
-  font-size: 20px;
-  line-height: 20px;
+  top: var(--size-2-3);
+  inset-inline-end: var(--size-2-3);
+  z-index: var(--layer-modal);
+  color: var(--dark);
   background: var(--red-1);
-  border-radius: 50%;
-  display: flex;
+  border-radius: 30px;
+  width: 22px;
+  height: 22px;
+  transform: scale(0.8);
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  padding: 0;
 }
-.markdown-source-view >.document-search-container>.document-search>.clickable-icon.document-search-close-button{
-  margin-top: 6px;
+.modal-header-button.clickable-icon svg{
+  height: 100%;
+  width: 100%;
 }
-.document-search-close-button:hover{
-  background: var(--red-2);
-}
-.document-search-close-button, .modal-close-button svg{
-  stroke-width: 3px;
-  height: 18px;
-  width: 18px;
-}
-.modal-close-button:hover{
-  background-color: var(--red-2);
-}
-body.styled-scrollbars .modal-close-button {
-  inset-inline-end: 16px;
-  color: var(--dark);
+@media (hover: hover) {
+  .modal-header-button:hover, .modal-close-button:hover {
+    background-color: var(--red-2);
+    color: var(--dark);
+  }
 }
 /* Settings sidebar styling inspired by primary theme of Obsidian and sailKite */
 .modal .vertical-tab-nav-item.is-active:not(body.is-phone .vertical-tab-nav-item){
@@ -493,7 +457,68 @@ body.styled-scrollbars .modal-close-button {
   background-color: transparent;
 }
 /* ************************************************************* */
+/* code block color */
+.markdown-rendered pre {
+  border-left: solid;
+  border: var(--code-border);
+}
 
+.markdown-source-view.mod-cm6 .cm-line.HyperMD-codeblock {
+  border-left: solid;
+}
+/* live preview */
+.cm-s-obsidian div.HyperMD-codeblock-begin-bg {
+  background: var(--code-background);
+  border-top: var(--code-border);
+  /* stylelint-disable-next-line declaration-no-important */
+  border-top-right-radius: 8px !important;
+  /* stylelint-disable-next-line declaration-no-important */
+  border-top-left-radius: 8px !important;
+  margin-top: 8px;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-end-bg {
+  background: var(--code-background);
+  border-bottom: var(--code-border);
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.cm-s-obsidian div.HyperMD-codeblock-bg {
+  border-right: var(--code-border);
+  border-left: var(--code-border);
+}
+/* Document search close button styling */
+.document-search-close-button, .modal-close-button {
+  font-size: 20px;
+  line-height: 20px;
+  background: var(--red-1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.markdown-source-view >.document-search-container>.document-search>.clickable-icon.document-search-close-button{
+  margin-top: 6px;
+}
+.document-search-close-button:hover{
+  background: var(--red-2);
+}
+.document-search-close-button, .modal-close-button svg{
+  stroke-width: 3px;
+  height: 18px;
+  width: 18px;
+}
+.modal-close-button:hover{
+  background-color: var(--red-2);
+}
+body.styled-scrollbars .modal-close-button {
+  inset-inline-end: 16px;
+  color: var(--dark);
+}
+
+/* ribbon icons styling */
 .vertical-tab-header-group-title {
   font-size: 16px;
   color: rgb(165, 173, 206);
@@ -770,7 +795,7 @@ b, strong {
   color: rgb(0 0 0);
 }
 /* @settings
-name: CSS Styling
+name: Personal CSS Styling
 id: css-styling
 
 settings:
@@ -779,7 +804,7 @@ settings:
 		type: heading
     level: 1
 		collapsed: false
-		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 31/07/2026 (UTC+5:30) by @arg387...
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 23/10/2026 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
     description: Settings related to header alignment
@@ -900,21 +925,23 @@ body.center-all-header-reading h6 {
   }
 }
 /* sidebar color and top bar color changing part */
-body.is-focused .titlebar, body.is-focused .workspace-ribbon.mod-left {
+.workspace-ribbon{
+  background: var(--titlebarandribbonbar-background-color);
+}
+.sidebar-toggle-button.mod-primary.mod-left {
+  background: var(--titlebarandribbonbar-background-color);
+}
+.workspace-ribbon.mod-primary.is-collapsed{
+  background: var(--titlebarandribbonbar-background-color);
+}
+body.is-focused .titlebar {
   --titlebar-background: var(--titlebarandribbonbar-background-color);
-}
-.workspace-ribbon.mod-left {
-  margin-top: var(--header-height);
-  background: var(--titlebarandribbonbar-background-color);
-}
-div.workspace-ribbon.side-dock-ribbon.mod-left.is-collapsed {
-  background: var(--titlebarandribbonbar-background-color);
 }
 .workspace-ribbon .side-dock-actions .clickable-icon{
   color: var(--titlebarandribbon-font-color);
 }
 .is-focused .titlebar-inner {
-    color: var(--titlebarandribbon-font-color);
+  color: var(--titlebarandribbon-font-color);
 
 }
 div.sidebar-toggle-button.mod-left .clickable-icon {
