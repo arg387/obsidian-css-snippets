@@ -381,9 +381,8 @@ button.mod-cta{
         background-color: #3f3f3f;
     }
 }
-.modal.mod-settings {
-  background-color: var(--settings-background);
-  --setting-group-center-offset: calc((100% - var(--setting-group-max-width)) / 2);
+
+body.is-frameless .modal {
   opacity: 0.9;
 }
 /* settings close button styling */
@@ -804,7 +803,7 @@ settings:
 		type: heading
     level: 1
 		collapsed: false
-		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 23/10/2026 (UTC+5:30) by @arg387...
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 24/10/2026 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
     description: Settings related to header alignment
@@ -814,11 +813,6 @@ settings:
   - id: center-all-header-reading
     title: Center all headers in note reading mode
     description: Toggle to enable or disable centering the headers of markdown notes in reading mode.
-    type: class-toggle
-    default: false
-  - id: center-all-header-editing
-    title: Center all headers in note editing mode
-    description: Toggle to enable or disable centering the headers of markdown notes in editing mode.
     type: class-toggle
     default: false
   - id: table-styling
@@ -881,13 +875,6 @@ settings:
     default: '#c6d0f5'
 
 */
-
-  
-*/
-/* for editor mode */
-body.center-all-header-editing [dir='ltr'] {
- text-align: center;
-}
 /* for reading mode */
 body.center-all-header-reading h1,
 body.center-all-header-reading h2,
