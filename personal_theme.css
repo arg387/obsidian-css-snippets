@@ -101,6 +101,7 @@ body{
   --checklist-done-color: rgb(79, 220, 138);
   --titlebarandribbonbar-background-color: var(--dark-green);
   --titlebarandribbon-font-color: var(--light-2);
+  --demo-margin: 5px;
 }
 .theme-dark{
   --interactive-normal: var(--dark-3);
@@ -266,15 +267,20 @@ body:not(.is-mobile) .workspace-split.mod-left-split .workspace-sidedock-vault-p
 }
 .nav-folder-title {
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
 }
 .tree-item-self .tree-item-icon{
-  font-size: 1.2em;
-  margin-right: 0.6em !important;
+  font-size: 1.4em;
+  margin-right: 1em !important;
 }
-.nav-file-title-content,
-.nav-folder-title-content {
+
+.nav-file-title-content {
   margin-top: 0.2em;
+  margin-left: 0.6em;
+}
+.nav-folder-title-content{
+  margin-top: 0.4em;
+  margin-left: 0.6em;
 }
 body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content::before {
   -webkit-mask-repeat: no-repeat;
@@ -282,16 +288,19 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content
   mask-repeat: no-repeat;
   content: "📄";
   display: flex;
-  flex-shrink: 0;
   height: var(--size-4-4);
   margin-left: calc(-1* var(--size-4-5));
   position: absolute;
   width: 20px;
   height: 20px;
+  margin-inline-start: calc(-5 * var(--demo-margin));
 }
+
 .nav-file .nav-file-title .nav-file-title-content{
-  font-size: 14px;
+  font-size: 16px;
+  margin-left: 0.6em;
 }
+
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".svg"], [data-path$=".bmp"], [data-path$=".jpeg"], [data-path$=".jpg"], [data-path$=".png"], [data-path$=".gif"])>.nav-file-title-content::before{
   content: "🖼️";
 }
@@ -308,8 +317,9 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title[data-path*=".canvas"] .
   content: '🧩';
 }
 .nav-file-title, .nav-folder-title{
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
+
 
 /* Command palette styling */
 .prompt {
