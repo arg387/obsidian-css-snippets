@@ -803,6 +803,9 @@ b, strong {
   text-decoration: none;
   color: rgb(0 0 0);
 }
+.mod-root .workspace-tab-header-status-icon {
+  color: rgb(247, 205, 255);
+}
 /* @settings
 name: Personal CSS Styling
 id: css-styling
@@ -813,16 +816,21 @@ settings:
 		type: heading
     level: 1
 		collapsed: false
-		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 24/10/2026 (UTC+5:30) by @arg387...
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 05/11/2026 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
-    description: Settings related to header alignment
+    description: Settings related to header alignment except for the file name header in the note.
 		type: heading
 		level: 2
 		collapsed: true
   - id: center-all-header-reading
-    title: Center all headers in note reading mode
+    title: Center all headers in note reading mode 
     description: Toggle to enable or disable centering the headers of markdown notes in reading mode.
+    type: class-toggle
+    default: false
+  - id: center-all-header-source
+    title: Center all headers in note source mode
+    description: Toggle to enable or disable centering the headers of markdown notes in source mode.
     type: class-toggle
     default: false
   - id: table-styling
@@ -894,9 +902,10 @@ body.center-all-header-reading h5,
 body.center-all-header-reading h6 {
   text-align: center;
 }
-.mod-root .workspace-tab-header-status-icon {
-  color: rgb(247, 205, 255);
+body.center-all-header-source .cm-s-obsidian .cm-line.HyperMD-header {
+  text-align: center;
 }
+
 /* table styles */
 .cm-html-embed tbody tr > td:first-child, .markdown-rendered tbody tr > td:first-child {
   border-left-width: var(--table-column-first-border-width);
