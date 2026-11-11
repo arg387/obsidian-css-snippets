@@ -1,32 +1,24 @@
 # obsidian-css-snippets
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/arg387/obsidian-css-snippets)
-<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-24/10/2026-cyan?style=flat"></a>
+<a href="#shield-last-updates"><img alt="Updated Date" src="https://img.shields.io/badge/Screenshots Update Date-11/11/2026-cyan?style=flat"></a>
 
 ![GitHub watchers](https://img.shields.io/github/watchers/arg387/obsidian-css-snippets)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=arg387.obsidian-css-snippets)
   
 
-This is my personal collection of CSS for obsidian. You can check `personal_theme.css` file if you want a default inspired minimal theme `make sure to use the personal theme with default theme if you want the best result `. Some of these CSS are written by me and others are collected from different sources. Screenshots are given below. If you have any suggestion make sure to add that in issues section. `This is compatible with only dark mode`. It is now used with obsidian version 1.14.4. Remember to disable the settings in the red circle(shown in the photo below) or else some styles in the settings may not work.
+This is my personal collection of CSS for obsidian. You can check `personal_theme.css` file if you want a default inspired minimal theme `make sure to use the personal theme with default theme if you want the best result `. Some of these CSS are written by me and others are collected from different sources. Screenshots are given below. If you have any suggestion make sure to add that in issues section. `This is compatible with only dark mode`. It is now used with obsidian version 1.15. Remember to disable the settings in the red circle(shown in the photo below) or else some styles in the settings may not work.
 <img width="1242" height="877" alt="Screenshot 2026-10-23 151641" src="https://github.com/user-attachments/assets/5e0a401b-e3f0-4da0-8343-ea0656c3c6c3" />
 
 
 
 ## Pictures
 - Personal Theme
-
+<img width="1850" height="1006" alt="image" src="https://github.com/user-attachments/assets/17390184-e216-48be-a480-d825b2a80d60" />
+<img width="1853" height="957" alt="image" src="https://github.com/user-attachments/assets/ab25cabb-fce1-4c42-8e51-24dd8e010112" />
+<img width="1916" height="1033" alt="image" src="https://github.com/user-attachments/assets/db83b810-b891-45d2-ada8-4d9513a5a1e2" />
+<img width="288" height="156" alt="image" src="https://github.com/user-attachments/assets/c7372708-e12a-4a1b-990a-50453ff1971a" />
 <img width="1913" height="1077" alt="image" src="https://github.com/user-attachments/assets/a5280ff2-e2e5-4b00-84ee-453eb13ea36e" />
-<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/13d8a25b-0d99-4d3e-8e63-55b2863bb349" />
-<img width="1919" height="1075" alt="Screenshot 2025-09-30 085937" src="https://github.com/user-attachments/assets/1f9f5ae4-e594-42f0-9865-4316437b5625" />
-
-
-<img width="1919" height="1068" alt="image" src="https://github.com/user-attachments/assets/93c3ce0d-bdf2-4f0b-9a81-f0d270b87529" />
-
-
-![obsidian-file-tree-icons](https://github.com/user-attachments/assets/6bac022d-5cc0-4b09-b9d5-978601d69003)
-
-
-
 <img width="1903" height="1067" alt="Screenshot 2026-01-20 130301" src="https://github.com/user-attachments/assets/8d8d2c6c-f5fc-4dba-90c1-36d283e27ecf" />
 
 
