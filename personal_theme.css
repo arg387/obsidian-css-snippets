@@ -313,26 +313,33 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".md"]:not(.is-active))>.nav-file-title-content::before{
   background-color: var(--peach-1);
 }
-.workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".base"])>.nav-file-title-content::before{
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".base"], [data-path$=" excalidraw.md"], [data-path*=".canvas"], [data-path$=".mp4"], [data-path$=".mp3"], [data-path$=".webm"], [data-path$=".mov"], [data-path$=".mkv"], [data-path$=".mpv"], [data-path$=".webp"], [data-path$=".avi"], [data-path$=".wmv"], [data-path$=".ogg"]):not(.is-active)>.nav-file-title-content::before{
   background-color: var(--peach-1);
+}
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".base"])>.nav-file-title-content::before{
+  background-color: var(--dark-7);
   mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCgo8IS0tIExpY2Vuc2U6IENDIEF0dHJpYnV0aW9uLiBNYWRlIGJ5IHdpc2hmb3JnZS5nYW1lczogaHR0cHM6Ly93d3cud2lzaGZvcmdlLmdhbWVzLyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJJY29ucyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgCgkgdmlld0JveD0iMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cgkuc3Qxe2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQo8L3N0eWxlPgo8ZWxsaXBzZSBjbGFzcz0ic3QwIiBjeD0iMTYiIGN5PSI4IiByeD0iMTAiIHJ5PSI1Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02LDh2OGMwLDIuOCw0LjUsNSwxMCw1YzUuNSwwLDEwLTIuMiwxMC01VjgiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTYsMTZ2OGMwLDIuOCw0LjUsNSwxMCw1YzUuNSwwLDEwLTIuMiwxMC01di04Ii8+Cjwvc3ZnPg==");
 }
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=" excalidraw.md"])>.nav-file-title-content::before{
-  background-color: var(--peach-1);
+  background-color: var(--dark-7);
   mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhLS0gTGljZW5zZTogQ0MwLiBNYWRlIGJ5IFNWRyBSZXBvOiBodHRwczovL3d3dy5zdmdyZXBvLmNvbS9zdmcvMzAyNzIvcGVuY2lsIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDQ4OS45MDUgNDg5LjkwNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg5LjkwNSA0ODkuOTA1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTM5My43MjcsMTU3LjM1YzIxLjItMC43LDI5LjQtNC43LDQzLjUtMjAuMmM1My01MywzOS43LTEyNS42LDM4LjEtMTMyLjljLTEuMi01LjQtOC42LTUuNC0xMC4xLTAuNAoJCQkJYy00LjMsMTUuMi0zNi4zLDYxLjQtODMuMiw2MS40Yy03LjQsMC44LTE1LjIsMS45LTIyLjIsNC43Yy0yMy43LDkuNy0xNy41LDM0LjItMTMuMiwzNy4zTDM5My43MjcsMTU3LjM1eiIvPgoJCQkKCQkJCTxyZWN0IHg9IjI2MS4yMTUiIHk9IjUuODM1IiB0cmFuc2Zvcm09Im1hdHJpeCgtMC43MDcxIDAuNzA3MSAtMC43MDcxIC0wLjcwNzEgNjQ4Ljc3NzMgMTg5LjYzMjMpIiB3aWR0aD0iNDcuOCIgaGVpZ2h0PSI0NDYuNjk2Ii8+CgkJCQoJCQkJPHJlY3QgeD0iMjA1LjI5MyIgeT0iNjEuNzMyIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcwNzEgLTAuNzA3MSAwLjcwNzEgMC43MDcxIC0xMzQuNDUzMiAyNDUuNTYxNykiIHdpZHRoPSI0Ny44IiBoZWlnaHQ9IjQ0Ni42OTYiLz4KCQkJPHBvbHlnb24gcG9pbnRzPSI0NjkuMjI3LDM4OC42NSAzODguNzI3LDQ2OS4xNSA0ODkuODI3LDQ4OS43NSAJCQkiLz4KCQkJPHBhdGggZD0iTTEzMC4yMjcsNDAuMzVsLTM0LjItMzQuMmMtOC4yLTguMi0yMS40LTguMi0yOS41LDBsLTYwLjMsNjAuM2MtOC4yLDguMi04LjIsMjEuNCwwLDI5LjVsMzQuMiwzNC4yTDEzMC4yMjcsNDAuMzV6Ii8+CgkJCTxwYXRoIGQ9Ik0xNy4xMjcsNDYwLjI1Yy02LjIsNy02LjIsMTcuNSwwLjQsMjQuNWM2LjYsNi42LDE3LjUsNywyNC41LDAuNGwxNjguNy0xNTYuM2wtMzcuMy0zNy4zTDE3LjEyNyw0NjAuMjV6Ii8+CgkJCTxwYXRoIGQ9Ik0zODAuMTI3LDE3MS43NWwtNDctNTAuMWMtMC40LTAuNC0wLjgtMC44LTEuMi0xLjJsLTQ1LjEsNDguNmw0Ni4zLDQ2LjNMMzgwLjEyNywxNzEuNzV6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=");
   margin: 0 6px 0 0;
 
 }
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".svg"], [data-path$=".bmp"], [data-path$=".jpeg"], [data-path$=".jpg"], [data-path$=".png"], [data-path$=".gif"])>.nav-file-title-content::before{
-  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M21 19V5c0-1.1-.9-2-2-2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2zm-11-4l2.03 2.71L15 13l4 5H5l5-6z"/></svg>');
-  background-color: rgb(49, 56, 196);
+  mask-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBMaWNlbnNlOiBQRC4gTWFkZSBieSBzdGVwaGVuaHV0Y2hpbmdzOiBodHRwczovL2dpdGh1Yi5jb20vc3RlcGhlbmh1dGNoaW5ncy90eXBpY29ucy5mb250IC0tPgo8c3ZnIGZpbGw9IiMwMDAwMDAiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgdmVyc2lvbj0iMS4yIiBiYXNlUHJvZmlsZT0idGlueSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI4LjUiIGN5PSI4LjUiIHI9IjIuNSIvPjxwYXRoIGQ9Ik0xNiAxMGMtMiAwLTMgMy00LjUgM3MtMS40OTktMS0zLjUtMWMtMiAwLTMuMDAxIDQtMy4wMDEgNGgxNC4wMDFzLTEtNi0zLTZ6TTIwIDNoLTE2Yy0xLjEwMyAwLTIgLjg5Ny0yIDJ2MTJjMCAxLjEwMy44OTcgMiAyIDJoMTZjMS4xMDMgMCAyLS44OTcgMi0ydi0xMmMwLTEuMTAzLS44OTctMi0yLTJ6bTAgMTRoLTE2di0xMmgxNnYxMnoiLz48L3N2Zz4=');
+  background-color: var(--dark-7);
+  top: 8px;
+  right: -2px;
 }
-.workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".svg"], [data-path$=".bmp"], [data-path$=".jpeg"], [data-path$=".jpg"], [data-path$=".png"], [data-path$=".gif"]:not(.is-active))>.nav-file-title-content::before{
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".svg"], [data-path$=".bmp"], [data-path$=".jpeg"], [data-path$=".jpg"], [data-path$=".png"], [data-path$=".gif"]):not(.is-active)>.nav-file-title-content::before{
   background-color: #95a2ed;
 }
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".mp4"], [data-path$=".mp3"], [data-path$=".webm"], [data-path$=".mov"], [data-path$=".mkv"], [data-path$=".mpv"], [data-path$=".webp"], [data-path$=".avi"], [data-path$=".wmv"], [data-path$=".ogg"])>.nav-file-title-content::before{
-  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill=""><path d="M0 0h24v24H0V0z" fill="none"/><path d="M8 5v14l11-7z"/></svg>');
-  background-color: var(--peach-1);
+  mask-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBMaWNlbnNlOiBQRC4gTWFkZSBieSBtb25leXRyZWU6IGh0dHBzOi8vZ2l0aHViLmNvbS9tb25leXRyZWUvbXQtd2ViLWljb25zIC0tPgo8c3ZnIGZpbGw9IiMwMDAwMDAiIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTgyOS40NCA5MTEuMzZjNDUuMDA5IDAgODEuOTItMzYuOTExIDgxLjkyLTgxLjkyVjE5NC41NmMwLTQ1LjAwOS0zNi45MTEtODEuOTItODEuOTItODEuOTJIMTk0LjU2Yy00NS4wMDkgMC04MS45MiAzNi45MTEtODEuOTIgODEuOTJ2NjM0Ljg4YzAgNDUuMDA5IDM2LjkxMSA4MS45MiA4MS45MiA4MS45Mmg2MzQuODh6bTAgNDAuOTZIMTk0LjU2Yy02Ny42MzEgMC0xMjIuODgtNTUuMjQ5LTEyMi44OC0xMjIuODhWMTk0LjU2YzAtNjcuNjMxIDU1LjI0OS0xMjIuODggMTIyLjg4LTEyMi44OGg2MzQuODhjNjcuNjMxIDAgMTIyLjg4IDU1LjI0OSAxMjIuODggMTIyLjg4djYzNC44OGMwIDY3LjYzMS01NS4yNDkgMTIyLjg4LTEyMi44OCAxMjIuODh6Ii8+PHBhdGggZD0iTTQzNi44ODcgMzY0Ljk2M2MtNi44MTctNC4zMjItMTUuNzIzLjU3Ny0xNS43MjMgOC42NDl2MjgwLjkyNGMwIDguMDY2IDguOTA5IDEyLjk2OSAxNS43MjMgOC42NDlsMjIxLjY0NS0xNDAuNDYyYzYuMzQ2LTQuMDIxIDYuMzQ2LTEzLjI3Ny0uMDAxLTE3LjI5OEw0MzYuODg2IDM2NC45NjN6bTI0My41NjkgMTA1Ljg2NGMzMS43MjcgMjAuMTA0IDMxLjcyNyA2Ni4zOS4wMDEgODYuNDk0bC0yMjEuNjQyIDE0MC40NmMtMzQuMDg0IDIxLjYwOC03OC42MTEtMi44OTMtNzguNjExLTQzLjI0NVYzNzMuNjEyYzAtNDAuMzYgNDQuNTIzLTY0Ljg1MyA3OC42MDktNDMuMjQ2bDIyMS42NDMgMTQwLjQ2MXoiLz48L3N2Zz4=');
+  background-color: var(--dark-7);
+  margin-left: -2px;
+  top: 6px;
 }
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".pdf"])>.nav-file-title-content::before{
   mask-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBMaWNlbnNlOiBNSVQuIE1hZGUgYnkgTWljcm9zb2Z0OiBodHRwczovL2dpdGh1Yi5jb20vbWljcm9zb2Z0L3ZzY29kZS1jb2RpY29ucyAtLT4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC41IDJIOWwtLjM1LjE1LS42NS42NC0uNjUtLjY0TDcgMkgxLjVsLS41LjV2MTBsLjUuNWg1LjI5bC44Ni44NWguN2wuODYtLjg1aDUuMjlsLjUtLjV2LTEwbC0uNS0uNXptLTcgMTAuMzJsLS4xOC0uMTdMNyAxMkgyVjNoNC43OWwuNzQuNzQtLjAzIDguNTh6TTE0IDEySDlsLS4zNS4xNS0uMTQuMTNWMy43bC43LS43SDE0djl6TTYgNUgzdjFoM1Y1em0wIDRIM3YxaDNWOXpNMyA3aDN2MUgzVjd6bTEwLTJoLTN2MWgzVjV6bS0zIDJoM3YxaC0zVjd6bTAgMmgzdjFoLTNWOXoiLz48L3N2Zz4=');
@@ -349,7 +356,7 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content
 }
 body:not(.nav-file-indicators) .nav-file .nav-file-title[data-path*=".canvas"] .nav-file-title-content::before {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23adb5bd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='svg-icon lucide-layout-dashboard'%3E%3Crect x='3' y='3' width='7' height='9'%3E%3C/rect%3E%3Crect x='14' y='3' width='7' height='5'%3E%3C/rect%3E%3Crect x='14' y='12' width='7' height='9'%3E%3C/rect%3E%3Crect x='3' y='16' width='7' height='5'%3E%3C/rect%3E%3C/svg%3E");
-  background-color: var(--peach-1);
+  background-color: var(--dark-7);
   color: #272c31;
   margin-right: 6px;
   margin-left: -2px;
@@ -938,7 +945,7 @@ settings:
 		type: heading
     level: 1
 		collapsed: false
-		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 11/11/2026 (UTC+5:30) by @arg387...
+		description: Download Style Settings Plugin from obsidian community plugin store to view these settings. Make sure to download the Merienda and Comic Sans MS font from Google Fonts or any other source and install it on your system to see the intended font style in the app[as extra measure]. As for if you want to add any other fonts to the theme or for table styling, make sure to add them to your system as well. Also, for the any styling options here to take effect, ensure that you have configured the options here. Updated in 13/11/2026 (UTC+5:30) by @arg387...
   - id: Header
 		title: Header Settings
     description: Settings related to header alignment except for the file name header in the note.
