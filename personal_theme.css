@@ -53,7 +53,8 @@ In no event shall the author or copyright holder be liable for any claim, damage
   --red-1: rgb(241, 25, 25);
   --red-2: rgb(255, 0, 0);
   --peach-1: rgb(250, 179, 135);
-
+  --green-1: rgb(64, 160, 43);
+  --red-3: rgb(210, 15, 57);
 }
 body{
   --h1-color: rgb(255, 209, 102);
@@ -316,7 +317,7 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content
   background-color: var(--peach-1);
   mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCgo8IS0tIExpY2Vuc2U6IENDIEF0dHJpYnV0aW9uLiBNYWRlIGJ5IHdpc2hmb3JnZS5nYW1lczogaHR0cHM6Ly93d3cud2lzaGZvcmdlLmdhbWVzLyAtLT4KPHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJJY29ucyIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgCgkgdmlld0JveD0iMCAwIDMyIDMyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHN0eWxlIHR5cGU9InRleHQvY3NzIj4KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9Cgkuc3Qxe2ZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MjtzdHJva2UtbGluZWpvaW46cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MTA7fQo8L3N0eWxlPgo8ZWxsaXBzZSBjbGFzcz0ic3QwIiBjeD0iMTYiIGN5PSI4IiByeD0iMTAiIHJ5PSI1Ii8+CjxwYXRoIGNsYXNzPSJzdDAiIGQ9Ik02LDh2OGMwLDIuOCw0LjUsNSwxMCw1YzUuNSwwLDEwLTIuMiwxMC01VjgiLz4KPHBhdGggY2xhc3M9InN0MCIgZD0iTTYsMTZ2OGMwLDIuOCw0LjUsNSwxMCw1YzUuNSwwLDEwLTIuMiwxMC01di04Ii8+Cjwvc3ZnPg==");
 }
-.workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".excalidraw.md"])>.nav-file-title-content::before{
+.workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=" excalidraw.md"])>.nav-file-title-content::before{
   background-color: var(--peach-1);
   mask-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhLS0gTGljZW5zZTogQ0MwLiBNYWRlIGJ5IFNWRyBSZXBvOiBodHRwczovL3d3dy5zdmdyZXBvLmNvbS9zdmcvMzAyNzIvcGVuY2lsIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkNhcGFfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiCgkgdmlld0JveD0iMCAwIDQ4OS45MDUgNDg5LjkwNSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNDg5LjkwNSA0ODkuOTA1OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjI1IiBoZWlnaHQ9IjI1Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPHBhdGggZD0iTTM5My43MjcsMTU3LjM1YzIxLjItMC43LDI5LjQtNC43LDQzLjUtMjAuMmM1My01MywzOS43LTEyNS42LDM4LjEtMTMyLjljLTEuMi01LjQtOC42LTUuNC0xMC4xLTAuNAoJCQkJYy00LjMsMTUuMi0zNi4zLDYxLjQtODMuMiw2MS40Yy03LjQsMC44LTE1LjIsMS45LTIyLjIsNC43Yy0yMy43LDkuNy0xNy41LDM0LjItMTMuMiwzNy4zTDM5My43MjcsMTU3LjM1eiIvPgoJCQkKCQkJCTxyZWN0IHg9IjI2MS4yMTUiIHk9IjUuODM1IiB0cmFuc2Zvcm09Im1hdHJpeCgtMC43MDcxIDAuNzA3MSAtMC43MDcxIC0wLjcwNzEgNjQ4Ljc3NzMgMTg5LjYzMjMpIiB3aWR0aD0iNDcuOCIgaGVpZ2h0PSI0NDYuNjk2Ii8+CgkJCQoJCQkJPHJlY3QgeD0iMjA1LjI5MyIgeT0iNjEuNzMyIiB0cmFuc2Zvcm09Im1hdHJpeCgwLjcwNzEgLTAuNzA3MSAwLjcwNzEgMC43MDcxIC0xMzQuNDUzMiAyNDUuNTYxNykiIHdpZHRoPSI0Ny44IiBoZWlnaHQ9IjQ0Ni42OTYiLz4KCQkJPHBvbHlnb24gcG9pbnRzPSI0NjkuMjI3LDM4OC42NSAzODguNzI3LDQ2OS4xNSA0ODkuODI3LDQ4OS43NSAJCQkiLz4KCQkJPHBhdGggZD0iTTEzMC4yMjcsNDAuMzVsLTM0LjItMzQuMmMtOC4yLTguMi0yMS40LTguMi0yOS41LDBsLTYwLjMsNjAuM2MtOC4yLDguMi04LjIsMjEuNCwwLDI5LjVsMzQuMiwzNC4yTDEzMC4yMjcsNDAuMzV6Ii8+CgkJCTxwYXRoIGQ9Ik0xNy4xMjcsNDYwLjI1Yy02LjIsNy02LjIsMTcuNSwwLjQsMjQuNWM2LjYsNi42LDE3LjUsNywyNC41LDAuNGwxNjguNy0xNTYuM2wtMzcuMy0zNy4zTDE3LjEyNyw0NjAuMjV6Ii8+CgkJCTxwYXRoIGQ9Ik0zODAuMTI3LDE3MS43NWwtNDctNTAuMWMtMC40LTAuNC0wLjgtMC44LTEuMi0xLjJsLTQ1LjEsNDguNmw0Ni4zLDQ2LjNMMzgwLjEyNywxNzEuNzV6Ii8+CgkJPC9nPgoJPC9nPgo8L2c+Cjwvc3ZnPgo=");
   margin: 0 6px 0 0;
@@ -335,14 +336,16 @@ body:not(.nav-file-indicators) .nav-file .nav-file-title .nav-file-title-content
 }
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".pdf"])>.nav-file-title-content::before{
   mask-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBMaWNlbnNlOiBNSVQuIE1hZGUgYnkgTWljcm9zb2Z0OiBodHRwczovL2dpdGh1Yi5jb20vbWljcm9zb2Z0L3ZzY29kZS1jb2RpY29ucyAtLT4KPHN2ZyB3aWR0aD0iMjRweCIgaGVpZ2h0PSIyNHB4IiB2aWV3Qm94PSIwIDAgMTYgMTYiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZmlsbD0iIzAwMDAwMCI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xNC41IDJIOWwtLjM1LjE1LS42NS42NC0uNjUtLjY0TDcgMkgxLjVsLS41LjV2MTBsLjUuNWg1LjI5bC44Ni44NWguN2wuODYtLjg1aDUuMjlsLjUtLjV2LTEwbC0uNS0uNXptLTcgMTAuMzJsLS4xOC0uMTdMNyAxMkgyVjNoNC43OWwuNzQuNzQtLjAzIDguNTh6TTE0IDEySDlsLS4zNS4xNS0uMTQuMTNWMy43bC43LS43SDE0djl6TTYgNUgzdjFoM1Y1em0wIDRIM3YxaDNWOXpNMyA3aDN2MUgzVjd6bTEwLTJoLTN2MWgzVjV6bS0zIDJoM3YxaC0zVjd6bTAgMmgzdjFoLTNWOXoiLz48L3N2Zz4=');
-  background-color: var(--red-1);
+  background-color: var(--green-1);
+  mask-repeat: no-repeat;
   margin-left: 2px;
+  top: 8px;
 }
 .workspace-leaf-content[data-type="file-explorer"] .nav-file-title:is([data-path$=".pdf"]:not(.is-active))>.nav-file-title-content::before{
   mask-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KCjwhLS0gTGljZW5zZTogTUlULiBNYWRlIGJ5IGRldmVsb3BtZW50c2VlZDogaHR0cHM6Ly9naXRodWIuY29tL2RldmVsb3BtZW50c2VlZC9jb2xsZWN0aWNvbnMtbGliIC0tPgo8c3ZnIHdpZHRoPSIyNHB4IiBoZWlnaHQ9IjI0cHgiIHZpZXdCb3g9IjAgMCAxNiAxNiIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICA8cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGlkPSJpY29uLWJvdW5kIiBmaWxsPSJub25lIiAvPgogIDxwYXRoIGQ9Ik01LDEyaDlWMEg0QzIuOSwwLDIsMC45LDIsMnYxMmMwLDEuMSwwLjksMiwyLDJoMTB2LTJINWMtMC42LDAtMS0wLjQtMS0xUzQuNCwxMiw1LDEyeiBNNSwyaDd2Mkg1VjJ6IiAvPgo8L3N2Zz4=');
   mask-repeat: no-repeat;
   background-color: var(--peach-1);
-
+  top: 8px;
 }
 body:not(.nav-file-indicators) .nav-file .nav-file-title[data-path*=".canvas"] .nav-file-title-content::before {
   mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23adb5bd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='svg-icon lucide-layout-dashboard'%3E%3Crect x='3' y='3' width='7' height='9'%3E%3C/rect%3E%3Crect x='14' y='3' width='7' height='5'%3E%3C/rect%3E%3Crect x='14' y='12' width='7' height='9'%3E%3C/rect%3E%3Crect x='3' y='16' width='7' height='5'%3E%3C/rect%3E%3C/svg%3E");
